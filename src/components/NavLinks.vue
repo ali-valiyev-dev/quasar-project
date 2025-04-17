@@ -54,7 +54,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const isKurumsalOpen = ref(true)
+const isKurumsalOpen = ref(false)
 const isHizmetOpen = ref(false)
 const isRehberOpen = ref(false)
 
