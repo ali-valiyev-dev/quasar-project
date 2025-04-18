@@ -13,10 +13,10 @@
     control-color="secondary"
     class="carousel rounded-borders"
   >
-    <q-carousel-slide :name="1" img-src="../assets/slider_image_1.jpg" />
-    <q-carousel-slide :name="2" img-src="../assets/slider_image_2.jpg" />
-    <q-carousel-slide :name="3" img-src="../assets/slider_image_3.jpg" />
-    <q-carousel-slide :name="4" img-src="../assets/slider_image_4.jpg" />
+    <q-carousel-slide :name="1" img-src="~assets/slider_image_1.jpg" />
+    <q-carousel-slide :name="2" img-src="~assets/slider_image_2.jpg" />
+    <q-carousel-slide :name="3" img-src="~assets/slider_image_3.jpg" />
+    <q-carousel-slide :name="4" img-src="~assets/slider_image_4.jpg" />
   </q-carousel>
 </template>
 

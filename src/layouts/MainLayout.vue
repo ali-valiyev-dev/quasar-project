@@ -9,24 +9,24 @@
       overlay
       :width="$q.screen.lt.sm ? $q.screen.width : 260"
     >
-      <div class="lt-md absolute-top row justify-end q-pa-md bg-white z-max">
+      <div class="lt-md absolute-top row justify-end q-px-md q-py-sm bg-white z-max">
         <q-btn flat dense icon="close" class="q-pa-none" @click="drawer = false" />
       </div>
+
       <LeftMenuList :miniState="miniState" />
     </q-drawer>
 
-    <q-page-container>
+    <q-page-container style="max-width: 1200px; margin-inline: auto">
       <router-view />
     </q-page-container>
   </q-layout>
 </template>
 
 <script setup>
-import HeaderSection from 'components/HeaderSection.vue'
-
 import { ref } from 'vue'
-import LeftMenuList from 'components/LeftMenuList.vue'
 import { useQuasar } from 'quasar'
+import LeftMenuList from 'components/LeftMenuList.vue'
+import HeaderSection from 'components/HeaderSection.vue'
 
 const $q = useQuasar()
 

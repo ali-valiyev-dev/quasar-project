@@ -1,6 +1,10 @@
 <template>
   <div class="gt-md nav-links">
-    <div class="dropdown" @mouseover="isKurumsalOpen = true" @mouseleave="isKurumsalOpen = false">
+    <div
+      class="relative-position"
+      @mouseover="isKurumsalOpen = true"
+      @mouseleave="isKurumsalOpen = false"
+    >
       <button class="dropdown-button">
         Kurumsal
         <q-icon name="expand_more" />
@@ -14,7 +18,11 @@
       </ul>
     </div>
 
-    <div class="dropdown" @mouseover="isHizmetOpen = true" @mouseleave="isHizmetOpen = false">
+    <div
+      class="relative-position"
+      @mouseover="isHizmetOpen = true"
+      @mouseleave="isHizmetOpen = false"
+    >
       <button class="dropdown-button">
         Hizmet Alanlarımız
         <q-icon name="expand_more" />
@@ -32,7 +40,11 @@
     <router-link to="/Hekimler" class="link">Hekimler</router-link>
     <router-link to="/BlogYazıları" class="link">Blog Yazıları </router-link>
 
-    <div class="dropdown" @mouseover="isRehberOpen = true" @mouseleave="isRehberOpen = false">
+    <div
+      class="relative-position"
+      @mouseover="isRehberOpen = true"
+      @mouseleave="isRehberOpen = false"
+    >
       <button class="dropdown-button">
         Rehber
         <q-icon name="expand_more" />
@@ -116,10 +128,6 @@ const rehberLinks = ref([
 .nav-links {
   display: flex;
   gap: 16px;
-}
-
-.dropdown {
-  position: relative;
 }
 
 .dropdown-button {

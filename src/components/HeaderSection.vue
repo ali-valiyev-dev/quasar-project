@@ -8,30 +8,30 @@
           no-caps
           no-wrap
           dense
+          padding="sm xl"
           outline
           label="İletişim"
-          class="col bg-primary text-white rounded-borders"
-          style="max-width: 100px"
+          class="col col-sm-auto bg-primary text-white rounded-borders"
         />
         <q-btn
           to="/"
           no-caps
           no-wrap
           dense
+          padding="sm xl"
           outline
           label="E-Sonuç"
-          class="col bg-primary text-white rounded-borders"
-          style="max-width: 100px"
+          class="col col-sm-auto bg-primary text-white rounded-borders"
         />
         <q-btn
           to="/"
           no-caps
           no-wrap
           dense
+          padding="sm xl"
           outline
           label="E-Randevu"
-          class="col bg-primary text-white rounded-borders"
-          style="max-width: 100px"
+          class="col col-sm-auto bg-primary text-white rounded-borders"
         />
         <q-space class="gt-xs" />
         <q-btn-dropdown outline dense no-wrap auto-close label="en" class="gt-xs q-pl-sm" />

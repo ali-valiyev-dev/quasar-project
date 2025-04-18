@@ -1,6 +1,6 @@
 <template>
-  <q-scroll-area class="fit" :horizontal-thumb-style="{ opacity: 0 }">
-    <q-list padding>
+  <q-scroll-area class="fit q-pt-xl q-pt-md-md" :horizontal-thumb-style="{ opacity: 0 }">
+    <q-list>
       <q-item clickable v-ripple>
         <q-item-section avatar>
           <q-icon name="inbox" />
