@@ -1,5 +1,5 @@
 <template>
-  <q-header bordered class="bg-white text-primary">
+  <q-header bordered class="bg-white">
     <!-- Top toolbar with nav buttons -->
     <q-toolbar class="column">
       <div
@@ -8,36 +8,48 @@
       >
         <q-btn
           to="/"
+          unelevated
           no-caps
           no-wrap
           dense
           padding="sm xl"
-          outline
           label="İletişim"
-          class="col col-sm-auto bg-primary text-white rounded-borders"
+          color="secondary"
+          class="col col-sm-auto rounded-borders"
         />
         <q-btn
           to="/"
           no-caps
+          unelevated
           no-wrap
           dense
           padding="sm xl"
-          outline
           label="E-Sonuç"
-          class="col col-sm-auto bg-primary text-white rounded-borders"
+          color="secondary"
+          class="col col-sm-auto rounded-borders"
         />
         <q-btn
           to="/"
           no-caps
+          unelevated
           no-wrap
           dense
           padding="sm xl"
-          outline
           label="E-Randevu"
-          class="col col-sm-auto bg-primary text-white rounded-borders"
+          color="secondary"
+          class="col col-sm-auto rounded-borders"
         />
         <q-space class="gt-xs" />
-        <q-btn-dropdown outline dense no-wrap auto-close label="en" class="gt-xs q-pl-sm" />
+        <q-btn-dropdown
+          outline
+          unelevated
+          dense
+          no-wrap
+          auto-close
+          color="secondary"
+          label="en"
+          class="gt-xs q-pl-sm"
+        />
       </div>
 
       <!-- Sticky navbar nav links -->

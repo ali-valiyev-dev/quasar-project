@@ -21,9 +21,9 @@
 
         <q-card-actions vertical align="left" class="q-mt-xl q-pa-none">
           <q-btn
-            no-caps
             to="/"
-            size="lg"
+            unelevated
+            no-caps
             padding="md xl"
             label="Bizi Daha Yakından Tanıyın"
             color="secondary"
