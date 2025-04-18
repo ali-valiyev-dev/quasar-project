@@ -9,17 +9,15 @@
         </div>
       </q-card-section>
 
-      <q-card-section class="col-12 col-md-7 q-pa-md-xl content-section">
-        <div class="text-h3 text-primary q-mb-lg">Sağlık önce insana dokunmaktır.</div>
+      <q-card-section class="col-12 col-md-7 q-pl-md-xl content-section">
+        <h2 class="text-h4 text-primary">Sağlık önce insana dokunmaktır.</h2>
 
-        <q-item class="q-pa-none q-mb-lg">
-          <q-item-label class="text-h6 text-weight-light text-teal-9">
-            Özel Medicabil Hastaneleri temel kurulma amacı sektördeki boşlukları en iyi şekilde
-            doldurup, insanların hak ettiği kaliteli sağlık hizmetine çok daha rahat ulaşmalarını
-            sağlamaktır. Gelişen teknolojinin tüm imkanlarını kullanan hastanemiz, son sistem
-            cihazlarla tedavi sürecini kısaltıyor.'
-          </q-item-label>
-        </q-item>
+        <p class="text-h6 text-weight-light text-gray">
+          Özel Medicabil Hastaneleri temel kurulma amacı sektördeki boşlukları en iyi şekilde
+          doldurup, insanların hak ettiği kaliteli sağlık hizmetine çok daha rahat ulaşmalarını
+          sağlamaktır. Gelişen teknolojinin tüm imkanlarını kullanan hastanemiz, son sistem
+          cihazlarla tedavi sürecini kısaltıyor.'
+        </p>
 
         <q-card-actions vertical align="left" class="q-mt-xl q-pa-none">
           <q-btn
@@ -28,7 +26,7 @@
             size="lg"
             padding="md xl"
             label="Bizi Daha Yakından Tanıyın"
-            color="primary"
+            color="secondary"
             class="rounded-borders"
           />
         </q-card-actions>
@@ -76,8 +74,8 @@ import StatisticsCard from './StatisticsCard.vue'
   width: 100%;
   height: 100%;
   background-image: url('../assets/stethoscope.png');
-  background-repeat: no-repeat;
   background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   opacity: 0.07;
 }
