@@ -2,7 +2,10 @@
   <q-header bordered class="bg-white text-primary">
     <!-- Top toolbar with nav buttons -->
     <q-toolbar class="column">
-      <div class="full-width row items-center q-py-md" style="gap: 16px">
+      <div
+        class="full-width row items-center q-py-md"
+        style="gap: 16px; border-bottom: 1px solid #cbcbcb"
+      >
         <q-btn
           to="/"
           no-caps
@@ -36,8 +39,6 @@
         <q-space class="gt-xs" />
         <q-btn-dropdown outline dense no-wrap auto-close label="en" class="gt-xs q-pl-sm" />
       </div>
-
-      <q-separator />
 
       <!-- Sticky navbar nav links -->
       <div class="full-width row items-center">

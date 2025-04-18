@@ -1,41 +1,47 @@
 <template>
-  <q-card flat class="row items-center">
-    <q-card-section class="col-12 col-md-5">
-      <div class="relative-position">
-        <div class="blue-frame bg-primary rounded-borders"></div>
-        <div class="teal-frame bg-secondary rounded-borders"></div>
-        <q-img src="~assets/person.jpg" class="img rounded-borders" :ratio="4 / 5" fit="cover" />
-      </div>
-    </q-card-section>
+  <div>
+    <q-card flat class="row items-center q-mb-xl">
+      <q-card-section class="col-12 col-md-5">
+        <div class="relative-position">
+          <div class="blue-frame bg-primary rounded-borders"></div>
+          <div class="teal-frame bg-secondary rounded-borders"></div>
+          <q-img src="~assets/person.jpg" class="img rounded-borders" :ratio="4 / 5" fit="cover" />
+        </div>
+      </q-card-section>
 
-    <q-card-section class="col-12 col-md-7 q-pa-md-xl content-section">
-      <div class="text-h3 text-primary q-mb-lg">Sağlık önce insana dokunmaktır.</div>
+      <q-card-section class="col-12 col-md-7 q-pa-md-xl content-section">
+        <div class="text-h3 text-primary q-mb-lg">Sağlık önce insana dokunmaktır.</div>
 
-      <q-item class="q-pa-none q-mb-lg">
-        <q-item-label class="text-h6 text-weight-light text-teal-9">
-          Özel Medicabil Hastaneleri temel kurulma amacı sektördeki boşlukları en iyi şekilde
-          doldurup, insanların hak ettiği kaliteli sağlık hizmetine çok daha rahat ulaşmalarını
-          sağlamaktır. Gelişen teknolojinin tüm imkanlarını kullanan hastanemiz, son sistem
-          cihazlarla tedavi sürecini kısaltıyor.'
-        </q-item-label>
-      </q-item>
+        <q-item class="q-pa-none q-mb-lg">
+          <q-item-label class="text-h6 text-weight-light text-teal-9">
+            Özel Medicabil Hastaneleri temel kurulma amacı sektördeki boşlukları en iyi şekilde
+            doldurup, insanların hak ettiği kaliteli sağlık hizmetine çok daha rahat ulaşmalarını
+            sağlamaktır. Gelişen teknolojinin tüm imkanlarını kullanan hastanemiz, son sistem
+            cihazlarla tedavi sürecini kısaltıyor.'
+          </q-item-label>
+        </q-item>
 
-      <q-card-actions vertical align="left" class="q-mt-xl q-pa-none">
-        <q-btn
-          no-caps
-          to="/"
-          size="lg"
-          padding="md xl"
-          label="Bizi Daha Yakından Tanıyın"
-          color="primary"
-          class="rounded-borders"
-        />
-      </q-card-actions>
-    </q-card-section>
-  </q-card>
+        <q-card-actions vertical align="left" class="q-mt-xl q-pa-none">
+          <q-btn
+            no-caps
+            to="/"
+            size="lg"
+            padding="md xl"
+            label="Bizi Daha Yakından Tanıyın"
+            color="primary"
+            class="rounded-borders"
+          />
+        </q-card-actions>
+      </q-card-section>
+    </q-card>
+
+    <StatisticsCard />
+  </div>
 </template>
 
 <script setup>
+import StatisticsCard from './StatisticsCard.vue'
+
 // You can add component logic here
 </script>
 
