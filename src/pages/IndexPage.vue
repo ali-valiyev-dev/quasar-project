@@ -1,5 +1,5 @@
 <template>
-  <q-page padding class="page">
+  <q-page padding class="page q-my-xl">
     <ImageCarousel />
     <IntroCard />
     <MedicalServices />
@@ -18,7 +18,8 @@ import BlogPosts from 'src/components/BlogPosts.vue'
 
 <style scoped>
 .page {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 100px;
 }
 </style>
