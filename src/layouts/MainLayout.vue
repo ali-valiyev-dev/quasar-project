@@ -19,6 +19,8 @@
     <q-page-container style="max-width: 1200px; margin-inline: auto">
       <router-view />
     </q-page-container>
+
+    <FooterSection />
   </q-layout>
 </template>
 
@@ -27,6 +29,7 @@ import { ref } from 'vue'
 import { useQuasar } from 'quasar'
 import LeftMenuList from 'components/LeftMenuList.vue'
 import HeaderSection from 'components/HeaderSection.vue'
+import FooterSection from 'src/components/FooterSection.vue'
 
 const $q = useQuasar()
 
