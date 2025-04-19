@@ -4,6 +4,7 @@
     <IntroCard />
     <MedicalServices />
     <OverviewCard />
+    <BlogPosts />
   </q-page>
 </template>
 
@@ -12,6 +13,7 @@ import ImageCarousel from 'src/components/ImageCarousel.vue'
 import IntroCard from 'src/components/IntroCard.vue'
 import MedicalServices from 'src/components/MedicalServices.vue'
 import OverviewCard from 'src/components/OverviewCard.vue'
+import BlogPosts from 'src/components/BlogPosts.vue'
 </script>
 
 <style scoped>
