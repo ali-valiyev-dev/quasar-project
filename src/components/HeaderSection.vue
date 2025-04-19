@@ -6,6 +6,7 @@
           dense
           flat
           round
+          unelevated
           color="secondary"
           icon="menu"
           aria-label="Menu"
@@ -32,25 +33,34 @@
           dense
           outline
           rounded
+          unelevated
           icon="search"
           padding="sm"
           aria-label="Search"
-          class="text-teal-7"
+          color="secondary"
           @click="showSearch = true"
         />
       </div>
     </div>
 
-    <q-select v-if="showSearch" v-model="searchQuery" autofocus filled hide-dropdown-icon>
+    <q-select
+      v-if="showSearch"
+      v-model="searchQuery"
+      autofocus
+      filled
+      hide-dropdown-icon
+      color="secondary"
+    >
       <template #append>
         <q-btn
           dense
           flat
           use-input
           rounded
+          unelevated
           icon="close"
           size="md"
-          color="grey-10"
+          color="secondary"
           aria-label="Search"
           @click="showSearch = false"
         />

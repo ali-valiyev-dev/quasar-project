@@ -5,7 +5,7 @@
     dense
     no-wrap
     auto-close
-    class="text-teal-7 q-pl-sm rounded-borders"
+    class="text-secondary q-pl-sm rounded-borders"
   >
     <template v-slot:label>
       <div class="row items-center">

@@ -21,6 +21,17 @@
       <router-view />
     </q-page-container>
 
+    <q-page-scroller class="gt-md" position="bottom-right" :scroll-offset="300" :offset="[30, 80]">
+      <q-btn
+        unelevated
+        rounded
+        padding="md"
+        icon="keyboard_double_arrow_up"
+        aria-label="Scroll to top"
+        class="bg-secondary text-white"
+      />
+    </q-page-scroller>
+
     <FooterSection />
   </q-layout>
 </template>
