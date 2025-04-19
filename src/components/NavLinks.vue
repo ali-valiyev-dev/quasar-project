@@ -135,7 +135,7 @@ const rehberLinks = ref([
   border: none;
   cursor: pointer;
   font-size: 16px;
-  color: #193768;
+  color: #474747;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -167,7 +167,7 @@ const rehberLinks = ref([
   align-items: center;
   padding-inline: 4px;
   text-decoration: none;
-  color: #193768;
+  color: #474747;
   font-size: 16px;
 }
 </style>
