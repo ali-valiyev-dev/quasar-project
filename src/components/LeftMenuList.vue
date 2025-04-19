@@ -33,9 +33,13 @@
         <q-item-section> Drafts </q-item-section>
       </q-item>
     </q-list>
+
+    <div class="row q-mt-xl">
+      <LangSelect class="xs q-mx-auto" />
+    </div>
   </q-scroll-area>
 </template>
 
 <script setup>
-//
+import LangSelect from './LangSelect.vue'
 </script>

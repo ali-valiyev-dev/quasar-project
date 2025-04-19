@@ -36,20 +36,15 @@
       color="secondary"
       class="col col-sm-auto rounded-borders"
     />
+
     <q-space class="gt-xs" />
-    <q-btn-dropdown
-      outline
-      unelevated
-      dense
-      no-wrap
-      auto-close
-      color="secondary"
-      label="en"
-      class="gt-xs q-pl-sm"
-    />
+
+    <LangSelect class="gt-xs" />
   </q-toolbar>
 </template>
 
 <script setup>
+import LangSelect from './LangSelect.vue'
+
 // Import necessary components
 </script>
