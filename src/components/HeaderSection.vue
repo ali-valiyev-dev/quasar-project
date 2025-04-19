@@ -1,62 +1,19 @@
 <template>
-  <q-header bordered class="bg-white">
-    <!-- Top toolbar with nav buttons -->
-    <q-toolbar class="column">
-      <div
-        class="full-width row items-center q-py-md"
-        style="gap: 16px; border-bottom: 1px solid #cbcbcb"
-      >
+  <header bordered class="sticky-header bg-white">
+    <div class="column q-px-md">
+      <div class="full-width row no-wrap items-center">
         <q-btn
-          to="/"
-          unelevated
-          no-caps
-          no-wrap
           dense
-          padding="sm xl"
-          label="İletişim"
+          flat
+          round
           color="secondary"
-          class="col col-sm-auto rounded-borders"
+          icon="menu"
+          aria-label="Menu"
+          class="lt-lg q-mr-md"
+          @click="toggleDrawer"
         />
-        <q-btn
-          to="/"
-          no-caps
-          unelevated
-          no-wrap
-          dense
-          padding="sm xl"
-          label="E-Sonuç"
-          color="secondary"
-          class="col col-sm-auto rounded-borders"
-        />
-        <q-btn
-          to="/"
-          no-caps
-          unelevated
-          no-wrap
-          dense
-          padding="sm xl"
-          label="E-Randevu"
-          color="secondary"
-          class="col col-sm-auto rounded-borders"
-        />
-        <q-space class="gt-xs" />
-        <q-btn-dropdown
-          outline
-          unelevated
-          dense
-          no-wrap
-          auto-close
-          color="secondary"
-          label="en"
-          class="gt-xs q-pl-sm"
-        />
-      </div>
 
-      <!-- Sticky navbar nav links -->
-      <div class="full-width row items-center">
-        <q-btn dense flat round icon="menu" aria-label="Menu" class="lt-lg" @click="toggleDrawer" />
-
-        <q-toolbar-title class="col-auto q-my-md" style="height: 50px">
+        <q-toolbar-title class="col-auto q-my-sm q-my-md-md no-padding" style="height: 40px">
           <router-link to="/" style="text-decoration: none">
             <img
               src="~assets/medicabil_logo.png"
@@ -67,37 +24,39 @@
           </router-link>
         </q-toolbar-title>
         <q-space />
-        <NavLinks />
+
+        <NavLinks class="gt-md" />
+
         <q-space />
         <q-btn
           dense
-          flat
+          outline
           rounded
           icon="search"
-          size="lg"
+          padding="sm"
           aria-label="Search"
-          class="bg-grey-3 text-grey-10"
+          class="bg-teal-1 text-teal-7"
           @click="showSearch = true"
         />
       </div>
-    </q-toolbar>
+    </div>
 
-    <q-select v-if="showSearch" v-model="searchQuery" filled hide-dropdown-icon>
+    <q-select v-if="showSearch" v-model="searchQuery" autofocus filled hide-dropdown-icon>
       <template #append>
         <q-btn
           dense
           flat
           use-input
-          auto-focus
+          rounded
           icon="close"
-          size="xs"
-          class="grey text-grey-8"
+          size="md"
+          color="grey-10"
           aria-label="Search"
           @click="showSearch = false"
         />
       </template>
     </q-select>
-  </q-header>
+  </header>
 </template>
 
 <script setup>
@@ -120,3 +79,12 @@ const toggleDrawer = () => {
   emit('update:drawer', !props.drawer)
 }
 </script>
+
+<style scoped>
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #e0e0e0;
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="gt-md nav-links">
+  <div class="nav-links">
     <div
       class="relative-position"
       @mouseover="isKurumsalOpen = true"
