@@ -30,8 +30,8 @@ import { ref } from 'vue'
 import { useQuasar } from 'quasar'
 import LeftMenuList from 'components/LeftMenuList.vue'
 import HeaderSection from 'components/HeaderSection.vue'
-import FooterSection from 'src/components/FooterSection.vue'
-import ToolbarSection from 'src/components/ToolbarSection.vue'
+import FooterSection from 'components/FooterSection.vue'
+import ToolbarSection from 'components/ToolbarSection.vue'
 
 const $q = useQuasar()
 

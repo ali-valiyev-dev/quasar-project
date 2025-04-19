@@ -66,11 +66,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const isKurumsalOpen = ref(false)
-const isHizmetOpen = ref(false)
-const isRehberOpen = ref(false)
-
-const kurumsalLinks = ref([
+const kurumsalLinks = [
   'Medicabil Hakkında',
   'Değerlerimiz',
   'Yönetim Kadromuz',
@@ -85,9 +81,9 @@ const kurumsalLinks = ref([
   'Tez Başvurusu',
   'Hasta Hakları',
   'Ziyaret Saatleri',
-])
+]
 
-const hizmetLinks = ref([
+const hizmetLinks = [
   'Tüm Hizmet Alanları',
   'Acil Servis',
   'Ağız ve Diş Sağlığı',
@@ -114,14 +110,18 @@ const hizmetLinks = ref([
   'Radyoloji',
   'Saç Ekimi Merkezi',
   'Üroloji',
-])
+]
 
-const rehberLinks = ref([
+const rehberLinks = [
   'Haberler',
   'Vlog',
   'Labaratuvar Test Rehberi',
   'Tahlil Sonucumu Nasıl Öğrenebilirim?',
-])
+]
+
+const isKurumsalOpen = ref(false)
+const isHizmetOpen = ref(false)
+const isRehberOpen = ref(false)
 </script>
 
 <style scoped>

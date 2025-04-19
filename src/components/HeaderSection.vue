@@ -35,7 +35,7 @@
           icon="search"
           padding="sm"
           aria-label="Search"
-          class="bg-teal-1 text-teal-7"
+          class="text-teal-7"
           @click="showSearch = true"
         />
       </div>

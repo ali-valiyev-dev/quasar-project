@@ -1,5 +1,12 @@
 <template>
-  <q-btn-dropdown outline unelevated dense no-wrap auto-close color="secondary" class="q-pl-sm">
+  <q-btn-dropdown
+    outline
+    unelevated
+    dense
+    no-wrap
+    auto-close
+    class="text-teal-7 q-pl-sm rounded-borders"
+  >
     <template v-slot:label>
       <div class="row items-center">
         <img :src="selectedLangFlag" class="q-mr-sm" />

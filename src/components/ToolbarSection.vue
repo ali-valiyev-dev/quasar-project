@@ -8,8 +8,7 @@
       unelevated
       no-caps
       no-wrap
-      dense
-      padding="sm xl"
+      padding="xs md"
       label="İletişim"
       color="secondary"
       class="col col-sm-auto rounded-borders"
@@ -19,8 +18,7 @@
       no-caps
       unelevated
       no-wrap
-      dense
-      padding="sm xl"
+      padding="xs md"
       label="E-Sonuç"
       color="secondary"
       class="col col-sm-auto rounded-borders"
@@ -30,8 +28,7 @@
       no-caps
       unelevated
       no-wrap
-      dense
-      padding="sm xl"
+      padding="xs md"
       label="E-Randevu"
       color="secondary"
       class="col col-sm-auto rounded-borders"
@@ -45,6 +42,4 @@
 
 <script setup>
 import LangSelect from './LangSelect.vue'
-
-// Import necessary components
 </script>

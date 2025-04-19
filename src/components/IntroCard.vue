@@ -24,10 +24,11 @@
             to="/"
             unelevated
             no-caps
+            no-wrap
             padding="md xl"
             label="Bizi Daha Yakından Tanıyın"
             color="secondary"
-            class="rounded-borders"
+            class="text-body1 rounded-borders"
           />
         </q-card-actions>
       </q-card-section>
@@ -39,8 +40,6 @@
 
 <script setup>
 import StatisticsCard from './StatisticsCard.vue'
-
-// You can add component logic here
 </script>
 
 <style scoped>
