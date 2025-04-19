@@ -76,7 +76,7 @@
           icon="search"
           size="lg"
           aria-label="Search"
-          class="bg-grey-3 text-grey-8"
+          class="bg-grey-3 text-grey-10"
           @click="showSearch = true"
         />
       </div>

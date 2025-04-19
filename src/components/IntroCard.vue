@@ -12,7 +12,7 @@
       <q-card-section class="col-12 col-md-7 q-pl-md-xl content-section">
         <h2 class="text-h4 text-primary">Sağlık önce insana dokunmaktır.</h2>
 
-        <p class="text-h6 text-weight-light text-gray">
+        <p class="text-h6 text-weight-light text-grey-10">
           Özel Medicabil Hastaneleri temel kurulma amacı sektördeki boşlukları en iyi şekilde
           doldurup, insanların hak ettiği kaliteli sağlık hizmetine çok daha rahat ulaşmalarını
           sağlamaktır. Gelişen teknolojinin tüm imkanlarını kullanan hastanemiz, son sistem

@@ -15,7 +15,7 @@
           class="service-card column text-primary col col-sm-5 rounded-borders q-pa-md q-pa-sm-xl text-center"
         >
           <q-icon :name="service.icon" color="secondary" size="lg" class="icon q-mx-auto q-mb-md" />
-          <q-item-label class="text-h6 text-weight-light text-grey-9">
+          <q-item-label class="text-h6 text-weight-light text-grey-10">
             {{ service.title }}
           </q-item-label>
         </q-item>

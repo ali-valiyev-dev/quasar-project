@@ -5,10 +5,10 @@
     </q-card-section>
 
     <q-card-section class="col text-left q-pa-md">
-      <h3 class="text-h6 text-primary truncated title">
+      <h3 class="text-h6 text-primary truncate title">
         {{ title }}
       </h3>
-      <p class="text-subtitle1 text-weight-light text-gray q-mx-auto truncated body">
+      <p class="text-subtitle1 text-weight-light text-grey-10 q-mx-auto truncate body">
         {{ body }}
       </p>
     </q-card-section>
@@ -49,7 +49,7 @@ defineProps({
   overflow: hidden;
 }
 
-.truncated {
+.truncate {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
