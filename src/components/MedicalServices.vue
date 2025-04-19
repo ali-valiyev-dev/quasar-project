@@ -1,6 +1,10 @@
 <template>
   <div>
-    <div class="title text-h4 q-mb-md">Hizmetlerimiz</div>
+    <div>
+      <h2 class="title text-h4 q-mt-none q-mb-xl text-center q-mx-auto q-ml-md-none q-mr-md-auto">
+        Hizmetlerimiz
+      </h2>
+    </div>
 
     <q-card flat class="row items-center">
       <q-card-section
@@ -45,7 +49,7 @@ const services = ref([
 
 <style scoped>
 .title {
-  width: 100px;
+  width: max-content;
   border-bottom: 2px solid #000;
   border-color: #009aa2;
 }

@@ -24,7 +24,7 @@
         padding="md sm md xl"
         icon-right="keyboard_arrow_right"
         color="secondary "
-        class="full-width"
+        class="full-width text-body1"
       />
     </q-card-actions>
   </q-card>

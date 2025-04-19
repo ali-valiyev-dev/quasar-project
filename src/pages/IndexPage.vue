@@ -1,5 +1,5 @@
 <template>
-  <q-page padding class="page q-my-xl">
+  <q-page padding class="page q-py-xl">
     <ImageCarousel />
     <IntroCard />
     <MedicalServices />

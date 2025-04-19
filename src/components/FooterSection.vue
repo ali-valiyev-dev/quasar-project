@@ -1,6 +1,6 @@
 <template>
   <footer class="column">
-    <div class="links-container row text-white q-py-xl q-px-sm q-px-sm-lg q-px-md-xl">
+    <div class="links-container row q-mx-auto text-white q-py-xl q-px-sm q-px-sm-lg q-px-md-xl">
       <div class="col-12 col-sm-6 col-md">
         <h5>Hasta ve Ziyaretçiler</h5>
         <q-list dense class="column">
@@ -114,12 +114,20 @@
     <div
       class="socials row text-center items-center justify-center justify-sm-between text-white q-py-md q-px-sm q-px-sm-lg q-px-md-xl"
     >
-      <span class="text-body2">Copyright ©2022 Özel Medicabil Hastanesi</span>
+      <span class="text-body2">Copyright ©2025 Özel Medicabil Hastanesi</span>
       <div class="social-icons row items-center q-pl-md">
-        <q-icon name="fab fa-facebook" size="xs" />
-        <q-icon name="fab fa-twitter" size="xs" />
-        <q-icon name="fab fa-instagram" size="xs" />
-        <q-icon name="fab fa-youtube" size="xs" />
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <q-icon name="fab fa-facebook" size="xs" />
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <q-icon name="fab fa-twitter" size="xs" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <q-icon name="fab fa-instagram" size="xs" />
+        </a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+          <q-icon name="fab fa-youtube" size="xs" />
+        </a>
       </div>
     </div>
   </footer>
@@ -163,6 +171,8 @@ footer {
   background-color: #003781;
 
   .links-container {
+    width: 100%;
+    max-width: 1200px;
     row-gap: 50px;
 
     .q-list {
@@ -193,15 +203,6 @@ footer {
     h5 {
       margin: 0 0 16px 0;
     }
-
-    a {
-      text-decoration: none;
-      color: #fff;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
   }
 
   .socials {
@@ -210,6 +211,15 @@ footer {
 
     .social-icons {
       gap: 16px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

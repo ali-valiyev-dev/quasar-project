@@ -1,11 +1,13 @@
 <template>
-  <q-card flat bordered class="q-pa-lg q-mx-auto stats-banner b">
-    <q-card-section class="column row-sm b" style="row-gap: 30px">
-      <q-item v-for="(stat, index) in stats" :key="index" class="column col text-center b">
-        <q-icon :name="stat.icon" size="xl" class="text-primary q-mx-auto" />
+  <q-card flat bordered class="stats-banner q-pa-lg q-mx-auto">
+    <q-card-section class="column row-sm" style="row-gap: 30px">
+      <q-item v-for="(stat, index) in stats" :key="index" class="column col text-center">
+        <q-icon :name="stat.icon" size="xl" class="text-secondary q-mx-auto" />
         <q-item-section>
-          <q-item-label class="text-h4 text-bold q-pt-sm">{{ stat.value }}</q-item-label>
-          <q-item-label class="text-secondary">{{ stat.label }}</q-item-label>
+          <q-item-label class="text-h4 text-grey-10 text-bold q-pt-sm">{{
+            stat.value
+          }}</q-item-label>
+          <q-item-label class="text-grey-8">{{ stat.label }}</q-item-label>
         </q-item-section>
       </q-item>
     </q-card-section>
