@@ -145,6 +145,8 @@ const rehberLinks = ref([
   position: absolute;
   top: 100%;
   left: 0;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
   background: white;
   border: 1px solid #eee;
   list-style: none;
