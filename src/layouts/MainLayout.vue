@@ -3,8 +3,8 @@
     <ToolbarSection />
     <HeaderSection :drawer="drawer" @update:drawer="drawer = $event" />
 
-    <q-drawer v-if="$q.screen.lt.lg" v-model="drawer" bordered overlay width="270">
-      <div class="absolute z-top" style="top: 60px; right: -17px">
+    <q-drawer v-if="$q.screen.lt.lg" v-model="drawer" bordered overlay :width="270">
+      <div class="absolute z-top" style="top: 65px; right: -17px">
         <q-btn
           dense
           round
