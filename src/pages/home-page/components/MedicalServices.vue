@@ -37,14 +37,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-
-const services = ref([
-  { icon: 'language', title: 'Online İşlemler' },
-  { icon: 'medical_services', title: 'Acil Servis' },
-  { icon: 'vaccines', title: 'Evde Bakım Hizmeti' },
-  { icon: 'health_and_safety', title: 'Özel Sağlık Sigortaları' },
-])
+import { services } from '../data'
 </script>
 
 <style scoped>

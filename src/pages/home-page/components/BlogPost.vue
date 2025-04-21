@@ -1,7 +1,7 @@
 <template>
   <q-card flat bordered class="card">
     <q-card-section class="no-padding">
-      <q-img fit="cover" src="../assets/blog_cover_1.jpg" alt="Blog post" />
+      <q-img fit="cover" src="~assets/blog_cover_1.jpg" alt="Blog post" />
     </q-card-section>
 
     <q-card-section class="col text-left q-pa-md">

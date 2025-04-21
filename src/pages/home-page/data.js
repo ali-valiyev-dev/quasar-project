@@ -1,23 +1,4 @@
-<template>
-  <div>
-    <div>
-      <h2 class="title text-h4 q-mt-none q-mb-xl text-center q-mx-auto q-ml-md-none q-mr-md-auto">
-        Blog
-      </h2>
-    </div>
-
-    <div class="cards row justify-center">
-      <div class="col-md" v-for="(blog, index) in blogs" :key="index">
-        <BlogPost :title="blog.title" :body="blog.body" :image="blog.image" :link="blog.link" />
-      </div>
-    </div>
-  </div>
-</template>
-
-<script setup>
-import BlogPost from './BlogPost.vue'
-
-const blogs = [
+export const blogs = [
   {
     title: 'Mukus (Balgam) Nedir? Balgam Rengi Ne Anlama Gelir ve Sağlığımızı Nasıl Etkiler?',
     body: `Mukus ya da balgam, bağışıklık sisteminin bir parçası olan berrak, kaygan, jel benzeri bir
@@ -46,16 +27,33 @@ const blogs = [
     link: '/',
   },
 ]
-</script>
 
-<style scoped>
-.title {
-  width: max-content;
-  border-bottom: 2px solid #000;
-  border-color: #009aa2;
-}
+export const services = [
+  { icon: 'language', title: 'Online İşlemler' },
+  { icon: 'medical_services', title: 'Acil Servis' },
+  { icon: 'vaccines', title: 'Evde Bakım Hizmeti' },
+  { icon: 'health_and_safety', title: 'Özel Sağlık Sigortaları' },
+]
 
-.cards {
-  gap: 16px;
-}
-</style>
+export const stats = [
+  {
+    icon: 'hotel',
+    value: '154',
+    label: 'Yatak Sayısı',
+  },
+  {
+    icon: 'groups',
+    value: '27,500+',
+    label: 'Kapalı Alan',
+  },
+  {
+    icon: 'volunteer_activism',
+    value: '170',
+    label: 'Uzman Sağlık Personeli',
+  },
+  {
+    icon: 'verified',
+    value: '15',
+    label: 'Yıllık Tecrübe',
+  },
+]

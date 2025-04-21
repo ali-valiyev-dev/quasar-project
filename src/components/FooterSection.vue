@@ -170,7 +170,7 @@ const sanitizeLink = (link) => `/${slugify(link, { lower: true, strict: true })}
 
 <style lang="scss" scoped>
 footer {
-  background-image: url('../assets/bg_footer.png');
+  background-image: url('src/assets/bg_footer.png');
   background-size: cover;
   background-position: center;
   background-color: #003781;

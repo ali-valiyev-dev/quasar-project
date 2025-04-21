@@ -31,7 +31,7 @@
 
 <style scoped>
 .cover-image {
-  background-image: url('../assets/medicabil_hospital.webp');
+  background-image: url('src/assets/medicabil_hospital.webp');
   background-size: cover;
   background-position: center;
   aspect-ratio: 1.5 / 1;

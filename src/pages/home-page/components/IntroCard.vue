@@ -72,7 +72,7 @@ import StatisticsCard from './StatisticsCard.vue'
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../assets/stethoscope.png');
+  background-image: url('src/assets/stethoscope.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
