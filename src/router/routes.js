@@ -4,155 +4,197 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/home-page/index.vue') },
+      {
+        path: 'kurumsal',
+        children: [
+          {
+            path: 'medicabil-hakkinda',
+            component: () => import('pages/medicabil-hakkinda/index.vue'),
+          },
+          // {
+          //   path: 'degerlerimiz',
+          //   component: () => import('pages/degerlerimiz/index.vue'),
+          // },
+          // {
+          //   path: 'yonetim-kadromuz',
+          //   component: () => import('pages/yonetim-kadromuz/index.vue'),
+          // },
+          // {
+          //   path: 'misyon-vizyon-kalite',
+          //   component: () => import('pages/misyon-vizyon-kalite/index.vue'),
+          // },
+          // {
+          //   path: 'sosyal-sorumluluk',
+          //   component: () => import('pages/sosyal-sorumluluk/index.vue'),
+          // },
+          // {
+          //   path: 'kalite-verilerimiz',
+          //   component: () => import('pages/kalite-verilerimiz/index.vue'),
+          // },
+          // { path: 'kvkk', component: () => import('pages/kvkk/index.vue') },
+          // { path: 'taahhutname', component: () => import('pages/taahhutname/index.vue') },
+          // {
+          //   path: 'anlasmali-kurumlarimiz',
+          //   component: () => import('pages/anlasmali-kurumlarimiz/index.vue'),
+          // },
+          // {
+          //   path: 'ozel-saglik-sigortalari',
+          //   component: () => import('pages/ozel-saglik-sigortalari/index.vue'),
+          // },
+          // {
+          //   path: 'insan-kaynaklari',
+          //   component: () => import('pages/insan-kaynaklari/index.vue'),
+          // },
+          // {
+          //   path: 'tez-basvurusu',
+          //   component: () => import('pages/tez-basvurusu/index.vue'),
+          // },
+          // {
+          //   path: 'hasta-haklari',
+          //   component: () => import('pages/hasta-haklari/index.vue'),
+          // },
+          // {
+          //   path: 'ziyaret-saatleri',
+          //   component: () => import('pages/ziyaret-saatleri/index.vue'),
+          // },
+        ],
+      },
       // {
-      //   path: 'Kurumsal',
+      //   path: 'hizmet-alanlarimiz',
       //   children: [
       //     {
-      //       path: 'MedicabilHakkında',
-      //       component: () => import('pages/Kurumsal/MedicabilHakkinda.vue'),
-      //     },
-      //     { path: 'Değerlerimiz', component: () => import('pages/Kurumsal/Degerlerimiz.vue') },
-      //     {
-      //       path: 'YönetimKadromuz',
-      //       component: () => import('pages/Kurumsal/YonetimKadromuz.vue'),
+      //       path: 'tum-hizmet-alanlari',
+      //       component: () => import('pages/tum-hizmet-alanlari/index.vue'),
       //     },
       //     {
-      //       path: 'MisyonVizyonKalite',
-      //       component: () => import('pages/Kurumsal/MisyonVizyonKalite.vue'),
+      //       path: 'acil-servis',
+      //       component: () => import('pages/acil-servis/index.vue'),
       //     },
       //     {
-      //       path: 'SosyalSorumluluk',
-      //       component: () => import('pages/Kurumsal/SosyalSorumluluk.vue'),
+      //       path: 'agiz-ve-dis-sagligi',
+      //       component: () => import('pages/agiz-ve-dis-sagligi/index.vue'),
       //     },
       //     {
-      //       path: 'KaliteVerilerimiz',
-      //       component: () => import('pages/Kurumsal/KaliteVerilerimiz.vue'),
-      //     },
-      //     { path: 'KVKK', component: () => import('pages/Kurumsal/KVKK.vue') },
-      //     { path: 'Taahhütname', component: () => import('pages/Kurumsal/Taahhutname.vue') },
-      //     {
-      //       path: 'AnlaşmalıKurumlarımız',
-      //       component: () => import('pages/Kurumsal/AnlasmaliKurumlarimiz.vue'),
+      //       path: 'anesteziyoloji-ve-reanimasyon',
+      //       component: () => import('pages/anesteziyoloji-ve-reanimasyon/index.vue'),
       //     },
       //     {
-      //       path: 'ÖzelSağlıkSigortaları',
-      //       component: () => import('pages/Kurumsal/OzelSaglikSigortalari.vue'),
+      //       path: 'beslenme-ve-diyetetik',
+      //       component: () => import('pages/beslenme-ve-diyetetik/index.vue'),
       //     },
       //     {
-      //       path: 'İnsanKaynakları',
-      //       component: () => import('pages/Kurumsal/InsanKaynaklari.vue'),
+      //       path: 'beyin-ve-sinir-cerrahisi',
+      //       component: () => import('pages/beyin-ve-sinir-cerrahisi/index.vue'),
       //     },
-      //     { path: 'TezBaşvurusu', component: () => import('pages/Kurumsal/TezBasvurusu.vue') },
-      //     { path: 'HastaHakları', component: () => import('pages/Kurumsal/HastaHaklari.vue') },
       //     {
-      //       path: 'ZiyaretSaatleri',
-      //       component: () => import('pages/Kurumsal/ZiyaretSaatleri.vue'),
+      //       path: 'cocuk-cerrahisi',
+      //       component: () => import('pages/cocuk-cerrahisi/index.vue'),
+      //     },
+      //     {
+      //       path: 'cocuk-sagligi-ve-hastaliklari',
+      //       component: () => import('pages/cocuk-sagligi-ve-hastaliklari/index.vue'),
+      //     },
+      //     {
+      //       path: 'dahiliye',
+      //       component: () => import('pages/dahiliye/index.vue'),
+      //     },
+      //     {
+      //       path: 'dermatoloji-cildiye',
+      //       component: () => import('pages/dermatoloji-cildiye/index.vue'),
+      //     },
+      //     {
+      //       path: 'enfeksiyon-hastaliklari',
+      //       component: () => import('pages/enfeksiyon-hastaliklari/index.vue'),
+      //     },
+      //     {
+      //       path: 'fizik-tedavi',
+      //       component: () => import('pages/fizik-tedavi/index.vue'),
+      //     },
+      //     {
+      //       path: 'genel-cerrahi',
+      //       component: () => import('pages/genel-cerrahi/index.vue'),
+      //     },
+      //     {
+      //       path: 'gogus-hastaliklari',
+      //       component: () => import('pages/gogus-hastaliklari/index.vue'),
+      //     },
+      //     {
+      //       path: 'goz-hastaliklari',
+      //       component: () => import('pages/goz-hastaliklari/index.vue'),
+      //     },
+      //     {
+      //       path: 'kalp-ve-damar-cerrahisi',
+      //       component: () => import('pages/kalp-ve-damar-cerrahisi/index.vue'),
+      //     },
+      //     {
+      //       path: 'kadin-hastaliklari-ve-dogum',
+      //       component: () => import('pages/kadin-hastaliklari-ve-dogum/index.vue'),
+      //     },
+      //     {
+      //       path: 'kardiyoloji',
+      //       component: () => import('pages/kardiyoloji/index.vue'),
+      //     },
+      //     {
+      //       path: 'klinik-psikoloji',
+      //       component: () => import('pages/klinik-psikoloji/index.vue'),
+      //     },
+      //     {
+      //       path: 'kulak-burun-bogaz-hastaliklari',
+      //       component: () => import('pages/kulak-burun-bogaz-hastaliklari/index.vue'),
+      //     },
+      //     {
+      //       path: 'noroloji-beyin-ve-sinir-hastaliklari',
+      //       component: () => import('pages/noroloji-beyin-ve-sinir-hastaliklari/index.vue'),
+      //     },
+      //     {
+      //       path: 'ortopedi-ve-travmatoloji',
+      //       component: () => import('pages/ortopedi-ve-travmatoloji/index.vue'),
+      //     },
+      //     {
+      //       path: 'psikiyatri',
+      //       component: () => import('pages/psikiyatri/index.vue'),
+      //     },
+      //     {
+      //       path: 'radyoloji',
+      //       component: () => import('pages/radyoloji/index.vue'),
+      //     },
+      //     {
+      //       path: 'sac-ekimi-merkezi',
+      //       component: () => import('pages/sac-ekimi-merkezi/index.vue'),
+      //     },
+      //     {
+      //       path: 'uroloji',
+      //       component: () => import('pages/uroloji/index.vue'),
       //     },
       //   ],
       // },
       // {
-      //   path: 'HizmetAlanlarımız',
+      //   path: 'rehber',
       //   children: [
+      //     { path: 'haberler', component: () => import('pages/haberler/index.vue') },
+      //     { path: 'vlog', component: () => import('pages/vlog/index.vue') },
       //     {
-      //       path: 'TümHizmetAlanları',
-      //       component: () => import('pages/Hizmetler/TumHizmetAlanlari.vue'),
-      //     },
-      //     { path: 'AcilServis', component: () => import('pages/Hizmetler/AcilServis.vue') },
-      //     {
-      //       path: 'AğızveDişSağlığı',
-      //       component: () => import('pages/Hizmetler/AgizVeDisSagligi.vue'),
+      //       path: 'labaratuvar-test-rehberi',
+      //       component: () => import('pages/labaratuvar-test-rehberi/index.vue'),
       //     },
       //     {
-      //       path: 'AnesteziyolojiveReanimasyon',
-      //       component: () => import('pages/Hizmetler/AnesteziyolojiVeReanimasyon.vue'),
-      //     },
-      //     {
-      //       path: 'BeslenmeveDiyetetik',
-      //       component: () => import('pages/Hizmetler/BeslenmeVeDiyetetik.vue'),
-      //     },
-      //     {
-      //       path: 'BeyinveSinirCerrahisi',
-      //       component: () => import('pages/Hizmetler/BeyinVeSinirCerrahisi.vue'),
-      //     },
-      //     { path: 'ÇocukCerrahisi', component: () => import('pages/Hizmetler/CocukCerrahisi.vue') },
-      //     {
-      //       path: 'ÇocukSağlığıveHastalıkları',
-      //       component: () => import('pages/Hizmetler/CocukSagligiVeHastaliklari.vue'),
-      //     },
-      //     { path: 'Dahiliye', component: () => import('pages/Hizmetler/Dahiliye.vue') },
-      //     { path: 'Dermatoloji', component: () => import('pages/Hizmetler/Dermatoloji.vue') },
-      //     {
-      //       path: 'EnfeksiyonHastalıkları',
-      //       component: () => import('pages/Hizmetler/EnfeksiyonHastaliklari.vue'),
-      //     },
-      //     { path: 'FizikTedavi', component: () => import('pages/Hizmetler/FizikTedavi.vue') },
-      //     { path: 'GenelCerrahi', component: () => import('pages/Hizmetler/GenelCerrahi.vue') },
-      //     {
-      //       path: 'GöğüsHastalıkları',
-      //       component: () => import('pages/Hizmetler/GogusHastaliklari.vue'),
-      //     },
-      //     {
-      //       path: 'GözHastalıkları',
-      //       component: () => import('pages/Hizmetler/GozHastaliklari.vue'),
-      //     },
-      //     {
-      //       path: 'KalpveDamarCerrahisi',
-      //       component: () => import('pages/Hizmetler/KalpVeDamarCerrahisi.vue'),
-      //     },
-      //     {
-      //       path: 'KadınHastalıklarıveDoğum',
-      //       component: () => import('pages/Hizmetler/KadinHastaliklariVeDogum.vue'),
-      //     },
-      //     { path: 'Kardiyoloji', component: () => import('pages/Hizmetler/Kardiyoloji.vue') },
-      //     {
-      //       path: 'KlinikPsikoloji',
-      //       component: () => import('pages/Hizmetler/KlinikPsikoloji.vue'),
-      //     },
-      //     {
-      //       path: 'KulakBurunBoğaz',
-      //       component: () => import('pages/Hizmetler/KulakBurunBogaz.vue'),
-      //     },
-      //     { path: 'Nöroloji', component: () => import('pages/Hizmetler/Noroloji.vue') },
-      //     {
-      //       path: 'OrtopediveTravmatoloji',
-      //       component: () => import('pages/Hizmetler/OrtopediVeTravmatoloji.vue'),
-      //     },
-      //     { path: 'Psikiyatri', component: () => import('pages/Hizmetler/Psikiyatri.vue') },
-      //     { path: 'Radyoloji', component: () => import('pages/Hizmetler/Radyoloji.vue') },
-      //     {
-      //       path: 'SaçEkimiMerkezi',
-      //       component: () => import('pages/Hizmetler/SacEkimiMerkezi.vue'),
-      //     },
-      //     { path: 'Üroloji', component: () => import('pages/Hizmetler/Uroloji.vue') },
-      //   ],
-      // },
-      // { path: 'Ünitelerimiz', component: () => import('pages/Unitelerimiz.vue') },
-      // { path: 'Hekimler', component: () => import('pages/Hekimler.vue') },
-      // { path: 'BlogYazıları', component: () => import('pages/BlogYazilari.vue') },
-      // {
-      //   path: 'Rehber',
-      //   children: [
-      //     { path: 'Haberler', component: () => import('pages/Rehber/Haberler.vue') },
-      //     { path: 'Vlog', component: () => import('pages/Rehber/Vlog.vue') },
-      //     {
-      //       path: 'LabaratuvarTestRehberi',
-      //       component: () => import('pages/Rehber/LabaratuvarTestRehberi.vue'),
-      //     },
-      //     {
-      //       path: 'TahlilSonucumuNasılÖğrenebilirim',
-      //       component: () => import('pages/Rehber/TahlilSonucumuNasilOgrenebilirim.vue'),
+      //       path: 'tahlil-sonucumu-nasil-ogrenebilirim',
+      //       component: () => import('pages/tahlil-sonucumu-nasil-ogrenebilirim/index.vue'),
       //     },
       //   ],
       // },
-      // { path: 'YalınSağlık', component: () => import('pages/YalinSaglik.vue') },
-      // { path: 'Dergi', component: () => import('pages/Dergi.vue') },
+      // { path: 'Ünitelerimiz', component: () => import('pages/Ünitelerimiz/index.vue') },
+      // { path: 'Hekimler', component: () => import('pages/Hekimler/index.vue') },
+      // { path: 'BlogYazıları', component: () => import('pages/BlogYazıları/index.vue') },
+      // { path: 'YalınSağlık', component: () => import('pages/YalınSağlık/index.vue') },
+      // { path: 'Dergi', component: () => import('pages/Dergi/index.vue') },
     ],
   },
 
   // Always leave this as last one,
   // but you can also remove it
   {
-    path: '/:catchAll(.*)*',
+    path: '/:catchAll(.*)',
     component: () => import('pages/not-found/index.vue'),
   },
 ]

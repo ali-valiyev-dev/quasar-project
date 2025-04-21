@@ -10,9 +10,9 @@
         <q-icon name="expand_more" />
       </button>
       <ul v-if="isKurumsalOpen" class="dropdown-menu">
-        <li v-for="(item, index) in kurumsalLinks" :key="index">
-          <router-link :to="`/${item.replace(/ /g, '')}`" class="link">
-            {{ item }}
+        <li v-for="(item, index) in KURUMSAL_LINKS" :key="index">
+          <router-link :to="item.to" class="link">
+            {{ item.label }}
           </router-link>
         </li>
       </ul>
@@ -28,9 +28,9 @@
         <q-icon name="expand_more" />
       </button>
       <ul v-if="isHizmetOpen" class="dropdown-menu">
-        <li v-for="(item, index) in hizmetLinks" :key="index">
-          <router-link :to="`/${item.replace(/ /g, '')}`" class="link">
-            {{ item }}
+        <li v-for="(item, index) in HIZMET_LINKS" :key="index">
+          <router-link :to="item.to" class="link">
+            {{ item.label }}
           </router-link>
         </li>
       </ul>
@@ -50,9 +50,9 @@
         <q-icon name="expand_more" />
       </button>
       <ul v-if="isRehberOpen" class="dropdown-menu">
-        <li v-for="(item, index) in rehberLinks" :key="index">
-          <router-link :to="`/${item.replace(/ /g, '')}`" class="link">
-            {{ item }}
+        <li v-for="(item, index) in REHBER_LINKS" :key="index">
+          <router-link :to="item.to" class="link">
+            {{ item.label }}
           </router-link>
         </li>
       </ul>
@@ -66,57 +66,72 @@
 <script setup>
 import { ref } from 'vue'
 
-const kurumsalLinks = [
-  'Medicabil Hakkında',
-  'Değerlerimiz',
-  'Yönetim Kadromuz',
-  'Misyon & Vizyon & Kalite',
-  'Sosyal Sorumluluk',
-  'Kalite Verilerimiz',
-  'KVKK',
-  'Taahhütname',
-  'Anlaşmalı Kurumlarımız',
-  'Özel Sağlık Sigortaları',
-  'İnsan Kaynakları',
-  'Tez Başvurusu',
-  'Hasta Hakları',
-  'Ziyaret Saatleri',
+const KURUMSAL_LINKS = [
+  { label: 'Medicabil Hakkında', to: '/kurumsal/medicabil-hakkinda' },
+  { label: 'Değerlerimiz', to: '/kurumsal/degerlerimiz' },
+  { label: 'Yönetim Kadromuz', to: '/kurumsal/yonetim-kadromuz' },
+  { label: 'Misyon & Vizyon & Kalite', to: '/kurumsal/misyon-vizyon-kalite' },
+  { label: 'Sosyal Sorumluluk', to: '/kurumsal/sosyal-sorumluluk' },
+  { label: 'Kalite Verilerimiz', to: '/kurumsal/kalite-verilerimiz' },
+  { label: 'KVKK', to: '/kurumsal/kvkk' },
+  { label: 'Taahhütname', to: '/kurumsal/taahhutname' },
+  { label: 'Anlaşmalı Kurumlarımız', to: '/kurumsal/anlasmali-kurumlarimiz' },
+  { label: 'Özel Sağlık Sigortaları', to: '/kurumsal/ozel-saglik-sigortalari' },
+  { label: 'İnsan Kaynakları', to: '/kurumsal/insan-kaynaklari' },
+  { label: 'Tez Başvurusu', to: '/kurumsal/tez-basvurusu' },
+  { label: 'Hasta Hakları', to: '/kurumsal/hasta-haklari' },
+  { label: 'Ziyaret Saatleri', to: '/kurumsal/ziyaret-saatleri' },
 ]
 
-const hizmetLinks = [
-  'Tüm Hizmet Alanları',
-  'Acil Servis',
-  'Ağız ve Diş Sağlığı',
-  'Anesteziyoloji ve Reanimasyon',
-  'Beslenme ve Diyetetik',
-  'Beyin ve Sinir Cerrahisi',
-  'Çocuk Cerrahisi',
-  'Çocuk Sağlığı ve Hastalıkları',
-  'Dahiliye',
-  'Dermatoloji (Cildiye)',
-  'Enfeksiyon Hastalıkları',
-  'Fizik Tedavi',
-  'Genel Cerrahi',
-  'Göğüs Hastalıkları',
-  'Göz Hastalıkları',
-  'Kalp ve Damar Cerrahisi',
-  'Kadın Hastalıkları ve Doğum',
-  'Kardiyoloji',
-  'Klinik Psikoloji',
-  'Kulak Burun Boğaz Hastalıkları',
-  'Nöroloji (Beyin ve Sinir Hastalıkları)',
-  'Ortopedi ve Travmatoloji',
-  'Psikiyatri',
-  'Radyoloji',
-  'Saç Ekimi Merkezi',
-  'Üroloji',
+const HIZMET_LINKS = [
+  { label: 'Tüm Hizmet Alanları', to: '/hizmet-alanlarimiz/tum-hizmet-alanlari' },
+  { label: 'Acil Servis', to: '/hizmet-alanlarimiz/acil-servis' },
+  { label: 'Ağız ve Diş Sağlığı', to: '/hizmet-alanlarimiz/agiz-ve-dis-sagligi' },
+  {
+    label: 'Anesteziyoloji ve Reanimasyon',
+    to: '/hizmet-alanlarimiz/anesteziyoloji-ve-reanimasyon',
+  },
+  { label: 'Beslenme ve Diyetetik', to: '/hizmet-alanlarimiz/beslenme-ve-diyetetik' },
+  { label: 'Beyin ve Sinir Cerrahisi', to: '/hizmet-alanlarimiz/beyin-ve-sinir-cerrahisi' },
+  { label: 'Çocuk Cerrahisi', to: '/hizmet-alanlarimiz/cocuk-cerrahisi' },
+  {
+    label: 'Çocuk Sağlığı ve Hastalıkları',
+    to: '/hizmet-alanlarimiz/cocuk-sagligi-ve-hastaliklari',
+  },
+  { label: 'Dahiliye', to: '/hizmet-alanlarimiz/dahiliye' },
+  { label: 'Dermatoloji (Cildiye)', to: '/hizmet-alanlarimiz/dermatoloji-cildiye' },
+  { label: 'Enfeksiyon Hastalıkları', to: '/hizmet-alanlarimiz/enfeksiyon-hastaliklari' },
+  { label: 'Fizik Tedavi', to: '/hizmet-alanlarimiz/fizik-tedavi' },
+  { label: 'Genel Cerrahi', to: '/hizmet-alanlarimiz/genel-cerrahi' },
+  { label: 'Göğüs Hastalıkları', to: '/hizmet-alanlarimiz/gogus-hastaliklari' },
+  { label: 'Göz Hastalıkları', to: '/hizmet-alanlarimiz/goz-hastaliklari' },
+  { label: 'Kalp ve Damar Cerrahisi', to: '/hizmet-alanlarimiz/kalp-ve-damar-cerrahisi' },
+  { label: 'Kadın Hastalıkları ve Doğum', to: '/hizmet-alanlarimiz/kadin-hastaliklari-ve-dogum' },
+  { label: 'Kardiyoloji', to: '/hizmet-alanlarimiz/kardiyoloji' },
+  { label: 'Klinik Psikoloji', to: '/hizmet-alanlarimiz/klinik-psikoloji' },
+  {
+    label: 'Kulak Burun Boğaz Hastalıkları',
+    to: '/hizmet-alanlarimiz/kulak-burun-bogaz-hastaliklari',
+  },
+  {
+    label: 'Nöroloji (Beyin ve Sinir Hastalıkları)',
+    to: '/hizmet-alanlarimiz/noroloji-beyin-ve-sinir-hastaliklari',
+  },
+  { label: 'Ortopedi ve Travmatoloji', to: '/hizmet-alanlarimiz/ortopedi-ve-travmatoloji' },
+  { label: 'Psikiyatri', to: '/hizmet-alanlarimiz/psikiyatri' },
+  { label: 'Radyoloji', to: '/hizmet-alanlarimiz/radyoloji' },
+  { label: 'Saç Ekimi Merkezi', to: '/hizmet-alanlarimiz/sac-ekimi-merkezi' },
+  { label: 'Üroloji', to: '/hizmet-alanlarimiz/uroloji' },
 ]
 
-const rehberLinks = [
-  'Haberler',
-  'Vlog',
-  'Labaratuvar Test Rehberi',
-  'Tahlil Sonucumu Nasıl Öğrenebilirim?',
+const REHBER_LINKS = [
+  { label: 'Haberler', to: '/rehber/haberler' },
+  { label: 'Vlog', to: '/rehber/vlog' },
+  { label: 'Labaratuvar Test Rehberi', to: '/rehber/labaratuvar-test-rehberi' },
+  {
+    label: 'Tahlil Sonucumu Nasıl Öğrenebilirim?',
+    to: '/rehber/tahlil-sonucumu-nasil-ogrenebilirim',
+  },
 ]
 
 const isKurumsalOpen = ref(false)
