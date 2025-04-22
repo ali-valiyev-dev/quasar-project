@@ -23,10 +23,10 @@ const routes = [
             path: 'misyon-vizyon-kalite',
             component: () => import('pages/kurumsal/misyon-vizyon-kalite/index.vue'),
           },
-          // {
-          //   path: 'sosyal-sorumluluk',
-          //   component: () => import('pages/kurumsal/sosyal-sorumluluk/index.vue'),
-          // },
+          {
+            path: 'sosyal-sorumluluk',
+            component: () => import('pages/kurumsal/sosyal-sorumluluk/index.vue'),
+          },
           // {
           //   path: 'kalite-verilerimiz',
           //   component: () => import('pages/kurumsal/kalite-verilerimiz/index.vue'),
