@@ -6,6 +6,7 @@ import LeftMenuList from './LeftMenuList.vue'
 import MenuItem from './MenuItem.vue'
 import NavLinks from './NavLinks.vue'
 import ToolbarSection from './ToolbarSection.vue'
+import PageHeader from './PageHeader.vue'
 
 export {
   DropdownMenuItem,
@@ -16,4 +17,5 @@ export {
   MenuItem,
   NavLinks,
   ToolbarSection,
+  PageHeader,
 }

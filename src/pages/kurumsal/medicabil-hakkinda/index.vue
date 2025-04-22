@@ -2,11 +2,7 @@
   <q-page>
     <PageHeader
       img="~assets/custom-image.jpg"
-      title="Medicabil Hakkında"
-      :breadcrumbs="[
-        { label: 'Kurumsal', to: '/kurumsal' },
-        { label: 'Medicabil Hakkında', to: '/kurumsal/medicabil-hakkinda' },
-      ]"
+      :breadcrumbs="[{ label: 'Kurumsal' }, { label: 'Medicabil Hakkında' }]"
     />
     <div class="container q-mx-auto q-my-xl">
       <p class="text-h6 text-weight-light text-grey-9">
@@ -62,7 +58,7 @@
 </template>
 
 <script setup>
-import PageHeader from './components/PageHeader.vue'
+import PageHeader from 'src/components/PageHeader.vue'
 </script>
 
 <style scoped>

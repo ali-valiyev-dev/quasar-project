@@ -3,7 +3,7 @@
     <q-img :ratio="5 / 1" :src="img" placeholder-src="~assets/bg_breadcrumbs.jpg" />
 
     <div class="absolute-center">
-      <h2 class="text-weight-medium text-white">{{ title }}</h2>
+      <h2 class="text-weight-medium text-white">{{ breadcrumbs[breadcrumbs.length - 1].label }}</h2>
 
       <q-breadcrumbs
         active-color="primary"
@@ -27,7 +27,6 @@
 <script setup>
 defineProps({
   img: String,
-  title: String,
   breadcrumbs: Array,
 })
 </script>

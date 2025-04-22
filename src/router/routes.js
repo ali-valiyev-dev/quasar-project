@@ -11,10 +11,10 @@ const routes = [
             path: 'medicabil-hakkinda',
             component: () => import('pages/kurumsal/medicabil-hakkinda/index.vue'),
           },
-          // {
-          //   path: 'degerlerimiz',
-          //   component: () => import('pages/kurumsal/degerlerimiz/index.vue'),
-          // },
+          {
+            path: 'degerlerimiz',
+            component: () => import('pages/kurumsal/degerlerimiz/index.vue'),
+          },
           // {
           //   path: 'yonetim-kadromuz',
           //   component: () => import('pages/kurumsal/yonetim-kadromuz/index.vue'),
