@@ -41,10 +41,10 @@ const routes = [
             path: 'ozel-saglik-sigortalari',
             component: () => import('pages/kurumsal/ozel-saglik-sigortalari/index.vue'),
           },
-          // {
-          //   path: 'insan-kaynaklari',
-          //   component: () => import('pages/kurumsal/insan-kaynaklari/index.vue'),
-          // },
+          {
+            path: 'insan-kaynaklari',
+            component: () => import('pages/kurumsal/insan-kaynaklari/index.vue'),
+          },
           // {
           //   path: 'tez-basvurusu',
           //   component: () => import('pages/kurumsal/tez-basvurusu/index.vue'),
