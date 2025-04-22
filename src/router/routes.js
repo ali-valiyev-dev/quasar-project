@@ -15,10 +15,10 @@ const routes = [
             path: 'degerlerimiz',
             component: () => import('pages/kurumsal/degerlerimiz/index.vue'),
           },
-          // {
-          //   path: 'yonetim-kadromuz',
-          //   component: () => import('pages/kurumsal/yonetim-kadromuz/index.vue'),
-          // },
+          {
+            path: 'yonetim-kadromuz',
+            component: () => import('pages/kurumsal/yonetim-kadromuz/index.vue'),
+          },
           // {
           //   path: 'misyon-vizyon-kalite',
           //   component: () => import('pages/kurumsal/misyon-vizyon-kalite/index.vue'),
