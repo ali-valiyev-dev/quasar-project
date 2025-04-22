@@ -1,10 +1,10 @@
 <template>
   <q-page>
     <PageHeader
-      img="~assets/custom-image.jpg"
+      img="src/assets/bg_breadcrumbs.jpg"
       :breadcrumbs="[{ label: 'Kurumsal' }, { label: 'Medicabil Hakkında' }]"
     />
-    <div class="container q-mx-auto q-my-xl">
+    <div class="container q-mx-auto q-py-xl q-px-sm q-px-sm-lg q-px-md-xl">
       <p class="text-h6 text-weight-light text-grey-9">
         Modern teknolojik yapımız; sunduğumuz tüm hizmetlerde mükemmeliyete ulaşmamıza olanak
         sağlayacak en önemli unsurlardan biridir. Bu nedenle, teknolojideki gelişmeleri izleyerek,

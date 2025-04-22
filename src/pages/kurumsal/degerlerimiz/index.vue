@@ -1,10 +1,10 @@
 <template>
   <q-page>
     <PageHeader
-      img="~assets/custom-image.jpg"
+      img="src/assets/bg_breadcrumbs.jpg"
       :breadcrumbs="[{ label: 'Kurumsal' }, { label: 'Değerlerimiz' }]"
     />
-    <div class="container q-mx-auto q-my-xl">
+    <div class="container q-mx-auto q-py-xl q-px-sm q-px-sm-lg q-px-md-xl">
       <p class="text-h6 text-weight-light text-grey-9">
         Bursa Özel Medicabil Hastanesi'nin en önemli varlığı çalışanlarıdır. “Değerlerimiz”
         çalışanlarımızın davranış biçimini belirleyen temel prensiplerdir ve Medicabil kurum

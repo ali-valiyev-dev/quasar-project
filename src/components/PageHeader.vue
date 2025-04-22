@@ -1,9 +1,11 @@
 <template>
   <div class="bg-primary relative-position">
-    <q-img :ratio="5 / 1" :src="img" placeholder-src="~assets/bg_breadcrumbs.jpg" />
+    <q-img :ratio="10 / 2" :src="img" error-src="src/assets/bg_breadcrumbs.jpg" loading="eager" />
 
-    <div class="absolute-center">
-      <h2 class="text-weight-medium text-white">{{ breadcrumbs[breadcrumbs.length - 1].label }}</h2>
+    <div class="gt-xs absolute-center">
+      <h2 class="text-weight-medium text-white text-no-wrap q-my-md q-my-md-xl text-center">
+        {{ breadcrumbs[breadcrumbs.length - 1].label }}
+      </h2>
 
       <q-breadcrumbs
         active-color="primary"
@@ -33,6 +35,6 @@ defineProps({
 
 <style scoped>
 .q-img {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 </style>
