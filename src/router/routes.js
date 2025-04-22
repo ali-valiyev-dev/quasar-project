@@ -45,10 +45,10 @@ const routes = [
             path: 'insan-kaynaklari',
             component: () => import('pages/kurumsal/insan-kaynaklari/index.vue'),
           },
-          // {
-          //   path: 'tez-basvurusu',
-          //   component: () => import('pages/kurumsal/tez-basvurusu/index.vue'),
-          // },
+          {
+            path: 'tez-basvurusu',
+            component: () => import('pages/kurumsal/tez-basvurusu/index.vue'),
+          },
           // {
           //   path: 'hasta-haklari',
           //   component: () => import('pages/kurumsal/hasta-haklari/index.vue'),
