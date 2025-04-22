@@ -32,7 +32,7 @@ const routes = [
             component: () => import('pages/kurumsal/kalite-verilerimiz/index.vue'),
           },
           { path: 'kvkk', component: () => import('pages/kurumsal/kvkk/index.vue') },
-          // { path: 'taahhutname', component: () => import('pages/kurumsal/taahhutname/index.vue') },
+          { path: 'taahhutname', component: () => import('pages/kurumsal/taahhutname/index.vue') },
           // {
           //   path: 'anlasmali-kurumlarimiz',
           //   component: () => import('pages/kurumsal/anlasmali-kurumlarimiz/index.vue'),
