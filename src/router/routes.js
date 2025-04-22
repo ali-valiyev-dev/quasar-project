@@ -53,10 +53,10 @@ const routes = [
             path: 'hasta-haklari',
             component: () => import('pages/kurumsal/hasta-haklari/index.vue'),
           },
-          // {
-          //   path: 'ziyaret-saatleri',
-          //   component: () => import('pages/kurumsal/ziyaret-saatleri/index.vue'),
-          // },
+          {
+            path: 'ziyaret-saatleri',
+            component: () => import('pages/kurumsal/ziyaret-saatleri/index.vue'),
+          },
         ],
       },
       // {
