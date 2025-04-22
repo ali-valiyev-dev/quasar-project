@@ -19,10 +19,10 @@ const routes = [
             path: 'yonetim-kadromuz',
             component: () => import('pages/kurumsal/yonetim-kadromuz/index.vue'),
           },
-          // {
-          //   path: 'misyon-vizyon-kalite',
-          //   component: () => import('pages/kurumsal/misyon-vizyon-kalite/index.vue'),
-          // },
+          {
+            path: 'misyon-vizyon-kalite',
+            component: () => import('pages/kurumsal/misyon-vizyon-kalite/index.vue'),
+          },
           // {
           //   path: 'sosyal-sorumluluk',
           //   component: () => import('pages/kurumsal/sosyal-sorumluluk/index.vue'),
