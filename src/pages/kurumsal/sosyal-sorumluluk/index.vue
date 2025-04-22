@@ -4,7 +4,7 @@
       img="src/assets/bg_breadcrumbs.jpg"
       :breadcrumbs="[{ label: 'Kurumsal' }, { label: 'Sosyal Sorumluluk' }]"
     />
-    <div class="container q-mx-auto q-py-xl q-px-sm q-px-sm-lg q-px-md-xl">
+    <PageContentWrapper>
       <p>
         Hastanemizin sosyal sorumluluk misyonu kapsamında dahil olduğu etkinlikler aşağıda
         sıralanmıştır.
@@ -247,24 +247,15 @@
         Huzurevi’ni ziyaret etti. Yeni yılda onları da unutmadığımızı gösterebildiysek ve
         yaşlılarımızın ihtiyaçlarına bir nebze de olsa karşılık verebildiysek ne mutlu bize.
       </p>
-    </div>
+    </PageContentWrapper>
   </q-page>
 </template>
 
 <script setup>
-import PageHeader from 'src/components/PageHeader.vue'
+import { PageHeader, PageContentWrapper } from 'src/components/index'
 </script>
 
 <style scoped>
-.container {
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.25rem;
-  font-weight: 300;
-  color: #424242;
-}
-
 h4 {
   margin-bottom: 0;
   font-size: 1.5rem;

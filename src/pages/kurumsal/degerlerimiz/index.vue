@@ -4,7 +4,7 @@
       img="src/assets/bg_breadcrumbs.jpg"
       :breadcrumbs="[{ label: 'Kurumsal' }, { label: 'Değerlerimiz' }]"
     />
-    <div class="container q-mx-auto q-py-xl q-px-sm q-px-sm-lg q-px-md-xl">
+    <PageContentWrapper>
       <p class="text-h6 text-weight-light text-grey-9">
         Bursa Özel Medicabil Hastanesi'nin en önemli varlığı çalışanlarıdır. “Değerlerimiz”
         çalışanlarımızın davranış biçimini belirleyen temel prensiplerdir ve Medicabil kurum
@@ -70,18 +70,10 @@
         Medicabil, kalite politikası gereği kalite yönetim sistemlerini uygulamanın, değişen şartlar
         ve ihtiyaçları doğrultusunda sürekli iyileştirmenin önemine inanır.
       </p>
-    </div>
+    </PageContentWrapper>
   </q-page>
 </template>
 
 <script setup>
-import PageHeader from 'src/components/PageHeader.vue'
+import { PageHeader, PageContentWrapper } from 'src/components/index'
 </script>
-
-<style scoped>
-.container {
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-}
-</style>

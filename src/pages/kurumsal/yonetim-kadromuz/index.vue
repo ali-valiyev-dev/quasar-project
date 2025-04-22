@@ -4,7 +4,7 @@
       img="src/assets/bg_breadcrumbs.jpg"
       :breadcrumbs="[{ label: 'Kurumsal' }, { label: 'Yönetim Kadromuz' }]"
     />
-    <div class="container q-mx-auto q-py-xl q-px-sm q-px-sm-lg q-px-md-xl">
+    <PageContentWrapper>
       <h2 class="text-h5 text-weight-bold text-grey-9">Yönetim Kadromuz</h2>
       <ul class="text-h6 text-weight-light text-grey-9 q-mt-md">
         <li>
@@ -42,18 +42,10 @@
         >
         tıklayın.
       </p>
-    </div>
+    </PageContentWrapper>
   </q-page>
 </template>
 
 <script setup>
-import PageHeader from 'src/components/PageHeader.vue'
+import { PageHeader, PageContentWrapper } from 'src/components/index'
 </script>
-
-<style scoped>
-.container {
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-}
-</style>

@@ -4,7 +4,7 @@
       img="src/assets/bg_breadcrumbs.jpg"
       :breadcrumbs="[{ label: 'Kurumsal' }, { label: 'Medicabil Hakkında' }]"
     />
-    <div class="container q-mx-auto q-py-xl q-px-sm q-px-sm-lg q-px-md-xl">
+    <PageContentWrapper>
       <p class="text-h6 text-weight-light text-grey-9">
         Modern teknolojik yapımız; sunduğumuz tüm hizmetlerde mükemmeliyete ulaşmamıza olanak
         sağlayacak en önemli unsurlardan biridir. Bu nedenle, teknolojideki gelişmeleri izleyerek,
@@ -53,19 +53,10 @@
         Sürekliliğin ve güvenliğin sağlanması için bütün sistemimiz kesintisiz güç kaynağı ile
         beslenmektedir.
       </p>
-    </div>
+    </PageContentWrapper>
   </q-page>
 </template>
 
 <script setup>
-import PageHeader from 'src/components/PageHeader.vue'
+import { PageHeader, PageContentWrapper } from 'src/components/index'
 </script>
-
-<style scoped>
-.container {
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-</style>

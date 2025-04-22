@@ -4,7 +4,7 @@
       img="src/assets/bg_breadcrumbs.jpg"
       :breadcrumbs="[{ label: 'Kurumsal' }, { label: 'Misyon & Vizyon & Kalite Politikamız' }]"
     />
-    <div class="container q-mx-auto q-py-xl q-px-sm q-px-sm-lg q-px-md-xl">
+    <PageContentWrapper>
       <p>
         Bursa Özel Medicabil Hastanesinin vizyon, misyon, kurumsal amaç, kurumsal hedef ve kalite
         politikalarıyla alakalı prensip ve ilkeleri aşağıda maddelenmiştir.
@@ -64,24 +64,15 @@
           sürekli iyileştirmeyi taahhüt ediyoruz.
         </li>
       </ul>
-    </div>
+    </PageContentWrapper>
   </q-page>
 </template>
 
 <script setup>
-import PageHeader from 'src/components/PageHeader.vue'
+import { PageHeader, PageContentWrapper } from 'src/components/index'
 </script>
 
 <style scoped>
-.container {
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.25rem;
-  font-weight: 300;
-  color: #424242;
-}
-
 h4 {
   margin-bottom: 0;
   font-size: 1.5rem;
