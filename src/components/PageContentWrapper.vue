@@ -27,5 +27,9 @@
   ul {
     font-weight: 300;
   }
+
+  a {
+    width: max-content;
+  }
 }
 </style>
