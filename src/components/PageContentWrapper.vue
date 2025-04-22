@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss">
 .wrapper {
   max-width: 1200px;
   display: flex;
@@ -12,5 +12,20 @@
   font-size: 1.25rem;
   font-weight: 300;
   color: #424242;
+
+  h4 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin-bottom: o;
+    font-weight: 300;
+  }
+
+  ul {
+    font-weight: 300;
+  }
 }
 </style>

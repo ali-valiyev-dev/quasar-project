@@ -5,7 +5,7 @@
       :breadcrumbs="[{ label: 'Kurumsal' }, { label: 'Medicabil Hakkında' }]"
     />
     <PageContentWrapper>
-      <p class="text-h6 text-weight-light text-grey-9">
+      <p>
         Modern teknolojik yapımız; sunduğumuz tüm hizmetlerde mükemmeliyete ulaşmamıza olanak
         sağlayacak en önemli unsurlardan biridir. Bu nedenle, teknolojideki gelişmeleri izleyerek,
         hizmetlerimizin etkinliğini, kalitesini ve verimliliğini artırmak için en güncel
@@ -17,7 +17,7 @@
         girişimsel radyolojik işlemler yapmaktayız.
       </p>
 
-      <p class="text-h6 text-weight-light text-grey-9">
+      <p>
         Tüm laboratuvarlarımız modern donanımlara sahip olup, tanı sürecine laboratuvarımızda
         çalışılan testler bilim ve teknoloji dünyasının devamlı takibi ile yenilenen cihazlarda
         kabul görmüş uluslararası kalite kontrol merkezlerinin denetiminde mümkün olan en kısa
@@ -38,7 +38,7 @@
         Refakatçilerimiz için de özel bir dinlenme alanı mevcuttur.
       </p>
 
-      <p class="text-h6 text-weight-light text-grey-9">
+      <p>
         Tüm hastalarımızın rahat etmeleri için her detayın düşünüldüğü odalarımızda ihtiyaç duyulan
         her şey mevcuttur. Uluslararası standartlarda, hasta odaklı hizmet anlayışı ile
         yapılandırılan, ameliyat salonlarımızdan ikisi organ nakli yapılabilecek donanıma sahiptir.

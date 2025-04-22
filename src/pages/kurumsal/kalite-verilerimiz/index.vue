@@ -165,21 +165,6 @@ import { PageHeader, PageContentWrapper } from 'src/components/index'
 </script>
 
 <style scoped>
-h4 {
-  margin-bottom: 0;
-  font-size: 1.5rem;
-}
-
-p {
-  margin-block: 1rem;
-  font-weight: 300;
-}
-
-ul {
-  margin-block: 0;
-  font-weight: 300;
-}
-
 .charts {
   display: flex;
   flex-direction: column;

@@ -5,8 +5,8 @@
       :breadcrumbs="[{ label: 'Kurumsal' }, { label: 'Yönetim Kadromuz' }]"
     />
     <PageContentWrapper>
-      <h2 class="text-h5 text-weight-bold text-grey-9">Yönetim Kadromuz</h2>
-      <ul class="text-h6 text-weight-light text-grey-9 q-mt-md">
+      <h4>Yönetim Kadromuz</h4>
+      <ul>
         <li>
           <strong>Medicabil Sağlık Grubu Yönetim Kurulu Başkanı:</strong> Prof. Dr. Ömer Faruk
           BİLGEN
@@ -22,7 +22,7 @@
         </li>
         <li><strong>Medicabil Evde Sağlık Merkezi Mesul Müdürü:</strong> Dr. Mustafa GÜNEŞ</li>
       </ul>
-      <p class="text-h6 text-weight-light text-grey- q-mt-lg">
+      <p>
         Organizasyon Şemasını indirmek için
         <a
           href="src/assets/org-semasi-2024-kek-2-rev-12-yoneticiler.pdf"
@@ -32,7 +32,7 @@
         >
         tıklayın.
       </p>
-      <p class="text-h6 text-weight-light text-grey-9">
+      <p>
         Yıldırım Hastanemizin organizasyon şemasını indirmek için
         <a
           href="src/assets/yh-org-semasi-2024-kek-4-yoneticiler-web-dosyasinin-kopyasi.pdf"
