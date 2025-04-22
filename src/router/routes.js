@@ -49,10 +49,10 @@ const routes = [
             path: 'tez-basvurusu',
             component: () => import('pages/kurumsal/tez-basvurusu/index.vue'),
           },
-          // {
-          //   path: 'hasta-haklari',
-          //   component: () => import('pages/kurumsal/hasta-haklari/index.vue'),
-          // },
+          {
+            path: 'hasta-haklari',
+            component: () => import('pages/kurumsal/hasta-haklari/index.vue'),
+          },
           // {
           //   path: 'ziyaret-saatleri',
           //   component: () => import('pages/kurumsal/ziyaret-saatleri/index.vue'),
