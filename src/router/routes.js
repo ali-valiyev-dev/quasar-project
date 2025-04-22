@@ -9,53 +9,53 @@ const routes = [
         children: [
           {
             path: 'medicabil-hakkinda',
-            component: () => import('pages/medicabil-hakkinda/index.vue'),
+            component: () => import('pages/kurumsal/medicabil-hakkinda/index.vue'),
           },
           // {
           //   path: 'degerlerimiz',
-          //   component: () => import('pages/degerlerimiz/index.vue'),
+          //   component: () => import('pages/kurumsal/degerlerimiz/index.vue'),
           // },
           // {
           //   path: 'yonetim-kadromuz',
-          //   component: () => import('pages/yonetim-kadromuz/index.vue'),
+          //   component: () => import('pages/kurumsal/yonetim-kadromuz/index.vue'),
           // },
           // {
           //   path: 'misyon-vizyon-kalite',
-          //   component: () => import('pages/misyon-vizyon-kalite/index.vue'),
+          //   component: () => import('pages/kurumsal/misyon-vizyon-kalite/index.vue'),
           // },
           // {
           //   path: 'sosyal-sorumluluk',
-          //   component: () => import('pages/sosyal-sorumluluk/index.vue'),
+          //   component: () => import('pages/kurumsal/sosyal-sorumluluk/index.vue'),
           // },
           // {
           //   path: 'kalite-verilerimiz',
-          //   component: () => import('pages/kalite-verilerimiz/index.vue'),
+          //   component: () => import('pages/kurumsal/kalite-verilerimiz/index.vue'),
           // },
-          // { path: 'kvkk', component: () => import('pages/kvkk/index.vue') },
-          // { path: 'taahhutname', component: () => import('pages/taahhutname/index.vue') },
+          // { path: 'kvkk', component: () => import('pages/kurumsal/kvkk/index.vue') },
+          // { path: 'taahhutname', component: () => import('pages/kurumsal/taahhutname/index.vue') },
           // {
           //   path: 'anlasmali-kurumlarimiz',
-          //   component: () => import('pages/anlasmali-kurumlarimiz/index.vue'),
+          //   component: () => import('pages/kurumsal/anlasmali-kurumlarimiz/index.vue'),
           // },
           // {
           //   path: 'ozel-saglik-sigortalari',
-          //   component: () => import('pages/ozel-saglik-sigortalari/index.vue'),
+          //   component: () => import('pages/kurumsal/ozel-saglik-sigortalari/index.vue'),
           // },
           // {
           //   path: 'insan-kaynaklari',
-          //   component: () => import('pages/insan-kaynaklari/index.vue'),
+          //   component: () => import('pages/kurumsal/insan-kaynaklari/index.vue'),
           // },
           // {
           //   path: 'tez-basvurusu',
-          //   component: () => import('pages/tez-basvurusu/index.vue'),
+          //   component: () => import('pages/kurumsal/tez-basvurusu/index.vue'),
           // },
           // {
           //   path: 'hasta-haklari',
-          //   component: () => import('pages/hasta-haklari/index.vue'),
+          //   component: () => import('pages/kurumsal/hasta-haklari/index.vue'),
           // },
           // {
           //   path: 'ziyaret-saatleri',
-          //   component: () => import('pages/ziyaret-saatleri/index.vue'),
+          //   component: () => import('pages/kurumsal/ziyaret-saatleri/index.vue'),
           // },
         ],
       },

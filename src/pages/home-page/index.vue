@@ -1,5 +1,5 @@
 <template>
-  <q-page padding class="page q-py-xl">
+  <q-page padding class="page q-py-xl q-mx-auto">
     <ImageCarousel />
     <IntroCard />
     <MedicalServices />
@@ -20,6 +20,7 @@ import {
 
 <style scoped>
 .page {
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   gap: 100px;

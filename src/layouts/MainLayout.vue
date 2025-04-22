@@ -18,7 +18,7 @@
       <LeftMenuList />
     </q-drawer>
 
-    <q-page-container style="max-width: 1200px; margin-inline: auto">
+    <q-page-container>
       <router-view />
     </q-page-container>
 
