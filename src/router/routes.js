@@ -33,10 +33,10 @@ const routes = [
           },
           { path: 'kvkk', component: () => import('pages/kurumsal/kvkk/index.vue') },
           { path: 'taahhutname', component: () => import('pages/kurumsal/taahhutname/index.vue') },
-          // {
-          //   path: 'anlasmali-kurumlarimiz',
-          //   component: () => import('pages/kurumsal/anlasmali-kurumlarimiz/index.vue'),
-          // },
+          {
+            path: 'anlasmali-kurumlarimiz',
+            component: () => import('pages/kurumsal/anlasmali-kurumlarimiz/index.vue'),
+          },
           // {
           //   path: 'ozel-saglik-sigortalari',
           //   component: () => import('pages/kurumsal/ozel-saglik-sigortalari/index.vue'),

@@ -20,7 +20,6 @@
   }
 
   p {
-    margin-bottom: o;
     font-weight: 300;
   }
 
