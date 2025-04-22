@@ -47,5 +47,5 @@ import ToolbarSection from 'components/ToolbarSection.vue'
 
 const $q = useQuasar()
 
-const drawer = ref(true)
+const drawer = ref(false)
 </script>
