@@ -1,23 +1,13 @@
 <template>
   <q-page>
-    <div class="bg-primary relative-position">
-      <q-img :ratio="5 / 1" src="" placeholder-src="~assets/bg_breadcrumbs.jpg" />
-
-      <div class="breadcrumbs">
-        <h2 class="text-weight-medium text-white">Medicabil Hakkında</h2>
-
-        <q-breadcrumbs
-          active-color="primary"
-          align="center"
-          class="text-h6 text-weight-regular text-white"
-        >
-          <q-breadcrumbs-el label="Ana Sayfa" icon="home" to="/" />
-          <q-breadcrumbs-el class="text-white" label="Kurumsal" />
-          <q-breadcrumbs-el class="text-white" label="Medicabil Hakkında" />
-        </q-breadcrumbs>
-      </div>
-    </div>
-
+    <PageHeader
+      img="~assets/custom-image.jpg"
+      title="Medicabil Hakkında"
+      :breadcrumbs="[
+        { label: 'Kurumsal', to: '/kurumsal' },
+        { label: 'Medicabil Hakkında', to: '/kurumsal/medicabil-hakkinda' },
+      ]"
+    />
     <div class="container q-mx-auto q-my-xl">
       <p class="text-h6 text-weight-light text-grey-9">
         Modern teknolojik yapımız; sunduğumuz tüm hizmetlerde mükemmeliyete ulaşmamıza olanak
@@ -71,24 +61,11 @@
   </q-page>
 </template>
 
-<script>
-export default {
-  name: 'Medicabil Hakkinda',
-}
+<script setup>
+import PageHeader from './components/PageHeader.vue'
 </script>
 
 <style scoped>
-.q-img {
-  opacity: 0.7;
-}
-
-.breadcrumbs {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .container {
   max-width: 1200px;
   display: flex;
