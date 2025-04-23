@@ -1,17 +1,18 @@
 <template>
   <div class="nav-links">
+    <router-link to="/" class="link" :class="{ active: route.path === '/' }">Ana Sayfa</router-link>
     <div
       class="relative-position"
       @mouseover="isKurumsalOpen = true"
       @mouseleave="isKurumsalOpen = false"
     >
-      <button class="dropdown-button">
+      <button class="dropdown-button" :class="{ active: isKurumsalActive }">
         Kurumsal
         <q-icon name="expand_more" />
       </button>
       <ul v-if="isKurumsalOpen" class="dropdown-menu">
         <li v-for="(item, index) in KURUMSAL_LINKS" :key="index">
-          <router-link :to="item.to" class="link">
+          <router-link :to="item.to" class="link" :class="{ active: route.path === item.to }">
             {{ item.label }}
           </router-link>
         </li>
@@ -23,48 +24,69 @@
       @mouseover="isHizmetOpen = true"
       @mouseleave="isHizmetOpen = false"
     >
-      <button class="dropdown-button">
+      <button class="dropdown-button" :class="{ active: isHizmetOpenActive }">
         Hizmet Alanlarımız
         <q-icon name="expand_more" />
       </button>
       <ul v-if="isHizmetOpen" class="dropdown-menu">
         <li v-for="(item, index) in HIZMET_LINKS" :key="index">
-          <router-link :to="item.to" class="link">
+          <router-link :to="item.to" class="link" :class="{ active: route.path === item.to }">
             {{ item.label }}
           </router-link>
         </li>
       </ul>
     </div>
 
-    <router-link to="/Ünitelerimiz" class="link">Ünitelerimiz</router-link>
-    <router-link to="/Hekimler" class="link">Hekimler</router-link>
-    <router-link to="/BlogYazıları" class="link">Blog Yazıları </router-link>
+    <router-link
+      to="/Ünitelerimiz"
+      class="link"
+      :class="{ active: route.path === '/Ünitelerimiz' }"
+    >
+      Ünitelerimiz
+    </router-link>
+    <router-link to="/Hekimler" class="link" :class="{ active: route.path === '/Hekimler' }">
+      Hekimler
+    </router-link>
+    <router-link
+      to="/BlogYazıları"
+      class="link"
+      :class="{ active: route.path === '/BlogYazıları' }"
+    >
+      Blog Yazıları
+    </router-link>
 
     <div
       class="relative-position"
       @mouseover="isRehberOpen = true"
       @mouseleave="isRehberOpen = false"
     >
-      <button class="dropdown-button">
+      <button class="dropdown-button" :class="{ active: isRehberOpenActive }">
         Rehber
         <q-icon name="expand_more" />
       </button>
       <ul v-if="isRehberOpen" class="dropdown-menu">
         <li v-for="(item, index) in REHBER_LINKS" :key="index">
-          <router-link :to="item.to" class="link">
+          <router-link :to="item.to" class="link" :class="{ active: route.path === item.to }">
             {{ item.label }}
           </router-link>
         </li>
       </ul>
     </div>
 
-    <router-link to="/YalınSağlık" class="link">Yalın Sağlık </router-link>
-    <router-link to="/Dergi" class="link">Dergi</router-link>
+    <router-link to="/YalınSağlık" class="link" :class="{ active: route.path === '/YalınSağlık' }">
+      Yalın Sağlık
+    </router-link>
+    <router-link to="/Dergi" class="link" :class="{ active: route.path === '/Dergi' }">
+      Dergi
+    </router-link>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
 
 const KURUMSAL_LINKS = [
   { label: 'Medicabil Hakkında', to: '/kurumsal/medicabil-hakkinda' },
@@ -137,6 +159,10 @@ const REHBER_LINKS = [
 const isKurumsalOpen = ref(false)
 const isHizmetOpen = ref(false)
 const isRehberOpen = ref(false)
+
+const isKurumsalActive = computed(() => KURUMSAL_LINKS.some((link) => route.path === link.to))
+const isHizmetOpenActive = computed(() => HIZMET_LINKS.some((link) => route.path === link.to))
+const isRehberOpenActive = computed(() => REHBER_LINKS.some((link) => route.path === link.to))
 </script>
 
 <style scoped>
@@ -150,10 +176,14 @@ const isRehberOpen = ref(false)
   border: none;
   cursor: pointer;
   font-size: 16px;
-  color: #474747;
+  color: #424242;
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+.dropdown-button.active {
+  color: #009ca7;
 }
 
 .dropdown-menu {
@@ -163,20 +193,45 @@ const isRehberOpen = ref(false)
   max-height: calc(100vh - 150px);
   overflow-y: auto;
   background: white;
-  border: 1px solid #eee;
+  box-shadow: 0 2px 8px #0000004d;
+  border-radius: 4px;
   list-style: none;
   padding: 0;
   margin: 0;
   z-index: 1000;
 }
 
-.dropdown-menu li {
-  text-wrap: nowrap;
-  padding: 8px 12px;
+.dropdown-menu::-webkit-scrollbar {
+  width: 5px;
 }
 
-.dropdown-menu li:hover {
-  background: #eee;
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: #009ca7;
+  border-radius: 4px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #007a85;
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+.dropdown-menu li .link {
+  text-wrap: nowrap;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+}
+
+.dropdown-menu li .link.active {
+  background-color: #009ca7 !important;
+  color: white;
+}
+
+.dropdown-menu li .link:hover {
+  background-color: #eee;
 }
 
 .link {
@@ -184,7 +239,11 @@ const isRehberOpen = ref(false)
   align-items: center;
   padding-inline: 4px;
   text-decoration: none;
-  color: #474747;
+  color: #424242;
   font-size: 16px;
+}
+
+.link.active {
+  color: #009ca7;
 }
 </style>
