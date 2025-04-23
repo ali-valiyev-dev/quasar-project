@@ -4,18 +4,37 @@
     <HeaderSection :drawer="drawer" @update:drawer="drawer = $event" />
 
     <q-drawer v-if="$q.screen.lt.lg" v-model="drawer" bordered overlay :width="270">
-      <div class="absolute z-top" style="top: 65px; right: -17px">
-        <q-btn
-          dense
-          round
-          unelevated
-          color="secondary"
-          icon="chevron_left"
-          @click="drawer = false"
-        />
+      <q-btn
+        dense
+        round
+        unelevated
+        color="secondary"
+        icon="chevron_left"
+        @click="drawer = false"
+        class="absolute z-top"
+        style="top: 70px; right: -17px"
+      />
+
+      <div class="fixed-top q-pa-md">
+        <q-img src="~assets/medicabil_logo.png" alt="Blog post" />
       </div>
 
       <LeftMenuList />
+
+      <div class="social-icons fixed-bottom row justify-center q-pa-md">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <q-icon name="fab fa-facebook" size="sm" />
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <q-icon name="fab fa-twitter" size="sm" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <q-icon name="fab fa-instagram" size="sm" />
+        </a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+          <q-icon name="fab fa-youtube" size="sm" />
+        </a>
+      </div>
     </q-drawer>
 
     <q-page-container>
@@ -49,3 +68,13 @@ const $q = useQuasar()
 
 const drawer = ref(false)
 </script>
+
+<style scoped>
+.social-icons {
+  gap: 16px;
+}
+
+.social-icons a {
+  color: #424242;
+}
+</style>

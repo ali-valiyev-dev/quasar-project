@@ -1,7 +1,7 @@
 <template>
   <q-scroll-area
     class="fit q-pb-md"
-    style="padding-top: 120px"
+    style="padding: 120px 0 60px 0"
     :horizontal-thumb-style="{ opacity: 0 }"
   >
     <q-list>
