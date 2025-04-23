@@ -226,8 +226,7 @@ const isRehberOpenActive = computed(() => REHBER_LINKS.some((link) => route.path
 }
 
 .dropdown-menu li .link.active {
-  background-color: #009ca7 !important;
-  color: white;
+  background-color: rgba(0, 156, 167, 0.1) !important;
 }
 
 .dropdown-menu li .link:hover {
