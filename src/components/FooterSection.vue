@@ -7,10 +7,10 @@
           <router-link
             v-for="(link, index) in patientLinks"
             :key="index"
-            :to="sanitizeLink(link)"
+            :to="link.to"
             class="text-body1"
           >
-            {{ link }}
+            {{ link.label }}
           </router-link>
         </q-list>
       </div>
@@ -21,10 +21,10 @@
           <router-link
             v-for="(link, index) in organizationLinks"
             :key="index"
-            :to="sanitizeLink(link)"
+            :to="link.to"
             class="text-body1"
           >
-            {{ link }}
+            {{ link.label }}
           </router-link>
         </q-list>
       </div>
@@ -139,33 +139,32 @@
 </template>
 
 <script setup>
-import slugify from 'slugify'
-
 const patientLinks = [
-  'Online İşlemler',
-  'Medicabil Hakkında',
-  'Misyon & Vizyon & Kalite Politikamız',
-  'Değerlerimiz',
-  'Yönetim Kadromuz',
-  'İş Başvurusu',
-  'Sosyal Sorumluluk',
-  'Kalite Verilerimiz',
-  'Kişisel Verilerin Korunma Kanunu',
-  'Taahhütname',
-  'Anlaşmalı Kurumlarımız',
-  'Özel Sağlık Sigortaları',
-  'Hasta Hakları',
-  'Ziyaret Saatleri',
+  { label: 'Online İşlemler', to: '/online-islemler' },
+  { label: 'Medicabil Hakkında', to: '/kurumsal/medicabil-hakkinda' },
+  {
+    label: 'Misyon & Vizyon & Kalite Politikamız',
+    to: '/kurumsal/misyon-vizyon-kalite-politikamiz',
+  },
+  { label: 'Değerlerimiz', to: '/kurumsal/degerlerimiz' },
+  { label: 'Yönetim Kadromuz', to: '/kurumsal/yonetim-kadromuz' },
+  { label: 'İş Başvurusu', to: '/kurumsal/is-basvurusu' },
+  { label: 'Sosyal Sorumluluk', to: '/kurumsal/sosyal-sorumluluk' },
+  { label: 'Kalite Verilerimiz', to: '/kurumsal/kalite-verilerimiz' },
+  { label: 'Kişisel Verilerin Korunma Kanunu', to: '/kurumsal/kisisel-verilerin-korunma-kanunu' },
+  { label: 'Taahhütname', to: '/kurumsal/taahhutname' },
+  { label: 'Anlaşmalı Kurumlarımız', to: '/kurumsal/anlasmali-kurumlarimiz' },
+  { label: 'Özel Sağlık Sigortaları', to: '/kurumsal/ozel-saglik-sigortalari' },
+  { label: 'Hasta Hakları', to: '/kurumsal/hasta-haklari' },
+  { label: 'Ziyaret Saatleri', to: '/kurumsal/ziyaret-saatleri' },
 ]
 
 const organizationLinks = [
-  'Nilüfer Hastanesi',
-  'Yıldırım Hastanesi',
-  'Medicabil Evde Bakım Merkezi',
-  'Yalın Sağlık Enstitüsü',
+  { label: 'Nilüfer Hastanesi', to: '/nilufer-hastanesi' },
+  { label: 'Yıldırım Hastanesi', to: '/yildirim-hastanesi' },
+  { label: 'Medicabil Evde Bakım Merkezi', to: '/medicabil-evde-bakim-merkezi' },
+  { label: 'Yalın Sağlık Enstitüsü', to: '/yalin-saglik-enstitusu' },
 ]
-
-const sanitizeLink = (link) => `/${slugify(link, { lower: true, strict: true })}`
 </script>
 
 <style lang="scss" scoped>
