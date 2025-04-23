@@ -50,6 +50,7 @@
       filled
       hide-dropdown-icon
       color="secondary"
+      class="absolute full-width bg-white"
     >
       <template #append>
         <q-btn
