@@ -158,18 +158,15 @@
           genel sağlık durumunun tehlikeli boyutlara varan derecede bozulması
         </li>
       </ul>
-      <div class="q-mt-lg">
-        <h3 class="title text-h4 q-mt-none text-center q-mx-auto q-ml-md-none q-mr-md-auto">
-          Ekibimiz
-        </h3>
-      </div>
+
+      <SectionTitle title="Ekibimiz" class="q-mt-lg" />
       <DoctorsList :doctors="doctors" />
     </PageContentWrapper>
   </q-page>
 </template>
 
 <script setup>
-import { PageContentWrapper, PageHeader, DoctorsList } from 'src/components/index'
+import { PageContentWrapper, PageHeader, DoctorsList, SectionTitle } from 'src/components/index'
 import { doctors } from './data'
 </script>
 

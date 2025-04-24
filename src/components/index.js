@@ -9,6 +9,7 @@ import ToolbarSection from './ToolbarSection.vue'
 import PageHeader from './PageHeader.vue'
 import PageContentWrapper from './PageContentWrapper.vue'
 import DoctorsList from './DoctorsList.vue'
+import SectionTitle from './SectionTitle.vue'
 
 export {
   DropdownMenuItem,
@@ -22,4 +23,5 @@ export {
   PageHeader,
   PageContentWrapper,
   DoctorsList,
+  SectionTitle,
 }
