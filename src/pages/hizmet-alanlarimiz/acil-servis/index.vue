@@ -167,7 +167,7 @@
 
 <script setup>
 import { PageContentWrapper, PageHeader, DoctorsList, SectionTitle } from 'src/components/index'
-import { doctors } from './data'
+import { doctors } from '../data'
 </script>
 
 <style scoped>

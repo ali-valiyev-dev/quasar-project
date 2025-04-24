@@ -102,7 +102,7 @@
 </template>
 
 <script setup>
-import { doctors, blogs } from './data'
+import { doctors, blogs } from '../data'
 import {
   PageContentWrapper,
   PageHeader,
