@@ -10,6 +10,8 @@ import PageHeader from './PageHeader.vue'
 import PageContentWrapper from './PageContentWrapper.vue'
 import DoctorsList from './DoctorsList.vue'
 import SectionTitle from './SectionTitle.vue'
+import BlogPosts from './BlogPosts.vue'
+import BlogPost from './BlogPost.vue'
 
 export {
   DropdownMenuItem,
@@ -24,4 +26,6 @@ export {
   PageContentWrapper,
   DoctorsList,
   SectionTitle,
+  BlogPosts,
+  BlogPost,
 }

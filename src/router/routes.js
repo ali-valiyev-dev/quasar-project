@@ -70,10 +70,10 @@ const routes = [
             path: 'acil-servis',
             component: () => import('pages/hizmet-alanlarimiz/acil-servis/index.vue'),
           },
-          //     {
-          //       path: 'agiz-ve-dis-sagligi',
-          //       component: () => import('pages/agiz-ve-dis-sagligi/index.vue'),
-          //     },
+          {
+            path: 'agiz-ve-dis-sagligi',
+            component: () => import('pages/hizmet-alanlarimiz/agiz-ve-dis-sagligi/index.vue'),
+          },
           //     {
           //       path: 'anesteziyoloji-ve-reanimasyon',
           //       component: () => import('pages/anesteziyoloji-ve-reanimasyon/index.vue'),
