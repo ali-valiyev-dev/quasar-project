@@ -66,10 +66,10 @@ const routes = [
             path: 'tum-hizmet-alanlari',
             component: () => import('pages/hizmet-alanlarimiz/tum-hizmet-alanlari/index.vue'),
           },
-          //     {
-          //       path: 'acil-servis',
-          //       component: () => import('pages/acil-servis/index.vue'),
-          //     },
+          {
+            path: 'acil-servis',
+            component: () => import('pages/hizmet-alanlarimiz/acil-servis/index.vue'),
+          },
           //     {
           //       path: 'agiz-ve-dis-sagligi',
           //       component: () => import('pages/agiz-ve-dis-sagligi/index.vue'),

@@ -8,9 +8,10 @@
       </h2>
 
       <q-breadcrumbs
-        active-color="primary"
+        active-color="white"
+        separator-color="white"
         align="center"
-        class="text-h6 text-weight-regular text-white"
+        class="text-h6 text-weight-regular text-red"
       >
         <q-breadcrumbs-el label="Ana Sayfa" icon="home" to="/" />
 
@@ -19,7 +20,6 @@
           :key="index"
           :label="breadcrumb.label"
           :to="breadcrumb.to"
-          class="text-white"
         />
       </q-breadcrumbs>
     </div>
@@ -35,6 +35,6 @@ defineProps({
 
 <style scoped>
 .q-img {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 </style>
