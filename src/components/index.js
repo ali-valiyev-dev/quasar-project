@@ -8,6 +8,7 @@ import NavLinks from './NavLinks.vue'
 import ToolbarSection from './ToolbarSection.vue'
 import PageHeader from './PageHeader.vue'
 import PageContentWrapper from './PageContentWrapper.vue'
+import DoctorsList from './DoctorsList.vue'
 
 export {
   DropdownMenuItem,
@@ -20,4 +21,5 @@ export {
   ToolbarSection,
   PageHeader,
   PageContentWrapper,
+  DoctorsList,
 }

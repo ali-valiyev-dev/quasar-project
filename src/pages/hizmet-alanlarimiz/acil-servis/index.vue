@@ -169,8 +169,7 @@
 </template>
 
 <script setup>
-import { PageContentWrapper, PageHeader } from 'src/components/index'
-import DoctorsList from 'src/components/DoctorsList.vue'
+import { PageContentWrapper, PageHeader, DoctorsList } from 'src/components/index'
 import { doctors } from './data'
 </script>
 
