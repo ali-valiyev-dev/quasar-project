@@ -3,16 +3,13 @@
     <SectionTitle title="Hizmetlerimiz" />
 
     <q-card flat class="row items-center">
-      <q-card-section
-        class="column row-sm justify-center col-12 col-md-7 q-pa-none q-py-md"
-        style="gap: 16px"
-      >
+      <q-card-section class="service-cards col-12 col-md-7 q-pa-md">
         <q-item
           v-for="(service, index) in services"
           :key="index"
           clickable
           to="/"
-          class="service-card column text-primary col col-sm-5 rounded-borders q-pa-md q-pa-sm-xl text-center"
+          class="service-card column col rounded-borders q-pa-xl q-pa-md-xl text-center"
         >
           <q-icon :name="service.icon" color="secondary" size="lg" class="icon q-mx-auto q-mb-md" />
           <q-item-label class="text-h6 text-weight-light text-grey-10">
@@ -44,7 +41,14 @@ import { services } from '../data'
   border-color: #009aa2;
 }
 
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
 .service-card {
+  width: 100%;
   border: 1px solid #cbcbcb;
 }
 
