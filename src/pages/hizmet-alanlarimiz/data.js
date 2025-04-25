@@ -23,6 +23,7 @@ export const blogs = [
     uykuda istem dışı diş sıkma veya gıcırdatma problemleri diş sağlığını olumsuz yönde etkiler.
     Diş sıkma veya gıcırdatma sorunu yaşayanlar genellikle bu durumun farkında değildir.`,
     img: 'src/assets/blog/dis_sikma_problemi.png',
+    date: '9 Nisan 2025',
     link: '/',
   },
   {
@@ -30,6 +31,7 @@ export const blogs = [
     body: `Bası yarası tedavisi ile anlatılmak istenen, vücudun değişik bölgelerinde ortaya
     çıkan, zor iyileşen ya da iyileşmeyen doku bozulmalarının bakımı ve tedavisidir.`,
     img: 'src/assets/blog/basi_yarasi_bakimi_ve_tedavisi.png',
+    date: '9 Nisan 2025',
     link: '/',
   },
   {
@@ -38,6 +40,7 @@ export const blogs = [
     "Grip nedir?", "Çocuklarda grip influenza nasıl tedavi edilir?", "İnfluenza semptomları
     nelerdir?", gibi soruların cevapları ile grip aşısı ile ilgili bilinmesi gerekenleri bu yazımızda bulabilirsiniz`,
     img: 'src/assets/blog/cocuklarda_influenza_grip.png',
+    date: '9 Nisan 2025',
     link: '/',
   },
 ]
