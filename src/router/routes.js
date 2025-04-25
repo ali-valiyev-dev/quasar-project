@@ -79,10 +79,10 @@ const routes = [
             component: () =>
               import('pages/hizmet-alanlarimiz/anesteziyoloji-ve-reanimasyon/index.vue'),
           },
-          //     {
-          //       path: 'beslenme-ve-diyetetik',
-          //       component: () => import('pages/beslenme-ve-diyetetik/index.vue'),
-          //     },
+          {
+            path: 'beslenme-ve-diyetetik',
+            component: () => import('pages/hizmet-alanlarimiz/beslenme-ve-diyetetik/index.vue'),
+          },
           //     {
           //       path: 'beyin-ve-sinir-cerrahisi',
           //       component: () => import('pages/beyin-ve-sinir-cerrahisi/index.vue'),
