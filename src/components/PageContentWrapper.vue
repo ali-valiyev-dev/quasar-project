@@ -19,14 +19,6 @@
     font-size: 1.5rem;
   }
 
-  p {
-    font-weight: 300;
-  }
-
-  ul {
-    font-weight: 300;
-  }
-
   a {
     width: max-content;
   }
