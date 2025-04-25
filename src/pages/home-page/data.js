@@ -1,29 +1,25 @@
 export const blogs = [
   {
-    title: 'Mukus (Balgam) Nedir? Balgam Rengi Ne Anlama Gelir ve Sağlığımızı Nasıl Etkiler?',
-    body: `Mukus ya da balgam, bağışıklık sisteminin bir parçası olan berrak, kaygan, jel benzeri bir
-    maddedir. Mukoza zarlarını kaplar ve mikropları, zararlı parçacıkları yakalayıp yok etmeye veya
-    temizlemeye yardımcı olur. Ayrıca, mukus vücudun nem dengesini korur ve solunum yollarını
-    koruyarak enfeksiyon riskini azaltır.`,
-    image: '',
+    title: 'Diş Sıkma Problemi',
+    body: `Günlük hayattaki yoğun ve stresli iş temposunun bir belirtisi olan
+    uykuda istem dışı diş sıkma veya gıcırdatma problemleri diş sağlığını olumsuz yönde etkiler.
+    Diş sıkma veya gıcırdatma sorunu yaşayanlar genellikle bu durumun farkında değildir.`,
+    img: 'src/assets/blog/dis_sikma_problemi.png',
     link: '/',
   },
   {
-    title: 'Sağlıklı Beslenme: Günlük İpuçları ile Daha İyi Bir Yaşam Tarzı Nasıl Benimsenir?',
-    body: `Sağlıklı beslenme, vücudunuzun ihtiyaç duyduğu tüm besinleri almanızı sağlar. Dengeli bir
-    diyet, enerji seviyenizi artırır ve genel sağlığınızı iyileştirir. Günlük beslenme alışkanlıklarınıza
-    taze sebze ve meyveler eklemek, işlenmiş gıdalardan uzak durmak ve yeterli su tüketmek,
-    sağlıklı bir yaşam tarzı için önemlidir.`,
-    image: '',
+    title: 'Bası Yarası Bakımı ve Tedavisi ',
+    body: `Bası yarası tedavisi ile anlatılmak istenen, vücudun değişik bölgelerinde ortaya
+    çıkan, zor iyileşen ya da iyileşmeyen doku bozulmalarının bakımı ve tedavisidir.`,
+    img: 'src/assets/blog/basi_yarasi_bakimi_ve_tedavisi.png',
     link: '/',
   },
   {
-    title: 'Egzersizin Faydaları ve Motivasyon İpuçları ile Aktif Bir Yaşam Sürdürmenin Önemi',
-    body: `Egzersiz yapmak, fiziksel ve zihinsel sağlığınızı iyileştirmenin harika bir yoludur. Düzenli
-    egzersiz, stres seviyelerini azaltır ve enerji seviyenizi artırır. Ayrıca, egzersiz kalp sağlığını
-    destekler, kas gücünü artırır ve kilo kontrolüne yardımcı olur. Motivasyonunuzu korumak için
-    hedefler belirleyin ve bir egzersiz rutini oluşturun.`,
-    image: '',
+    title: 'Çocuklarda Influenza (Grip)',
+    body: `Özellikle kış aylarında sıklıkla görülen grip ile ilgili tüm merak edilenler,
+    "Grip nedir?", "Çocuklarda grip influenza nasıl tedavi edilir?", "İnfluenza semptomları
+    nelerdir?", gibi soruların cevapları ile grip aşısı ile ilgili bilinmesi gerekenleri bu yazımızda bulabilirsiniz`,
+    img: 'src/assets/blog/cocuklarda_influenza_grip.png',
     link: '/',
   },
 ]

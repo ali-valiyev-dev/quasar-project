@@ -1,10 +1,6 @@
 <template>
   <div>
-    <div>
-      <h2 class="title text-h4 q-mt-none q-mb-xl text-center q-mx-auto q-ml-md-none q-mr-md-auto">
-        Hizmetlerimiz
-      </h2>
-    </div>
+    <SectionTitle title="Hizmetlerimiz" />
 
     <q-card flat class="row items-center">
       <q-card-section
@@ -37,6 +33,7 @@
 </template>
 
 <script setup>
+import SectionTitle from 'src/components/SectionTitle.vue'
 import { services } from '../data'
 </script>
 
