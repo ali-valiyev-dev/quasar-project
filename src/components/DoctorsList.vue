@@ -1,27 +1,28 @@
 <template>
-  <div class="cards q-mb-xl">
+  <div class="cards">
     <q-card v-for="(doctor, index) in doctors" :key="index" flat bordered>
-      <q-img :src="doctor.img" alt="Doctor Image" />
+      <q-img fit="cover" :src="doctor.img" alt="Doctor Image">
+        <div class="absolute-bottom text-center no-padding" style="z-index: 1">
+          <h3 class="text-h6 q-mt-md q-mb-none">{{ doctor.name }}</h3>
+          <p class="text-body1 q-mt-none q-mb-sm">
+            {{ doctor.specialty }}
+          </p>
 
-      <q-card-section>
-        <h4 class="text-center no-margin">{{ doctor.name }}</h4>
-        <p class="text-center">{{ doctor.specialty }}</p>
-      </q-card-section>
+          <q-separator color="white" />
 
-      <q-separator />
-
-      <q-card-actions class="q-pa-none">
-        <q-btn
-          to="/"
-          no-caps
-          unelevated
-          square
-          label="Randevu Al"
-          padding="md sm md xl"
-          icon-right="keyboard_arrow_right"
-          class="full-width text-body1 text-secondary"
-        />
-      </q-card-actions>
+          <q-btn
+            to="/"
+            no-caps
+            no-wrap
+            unelevated
+            square
+            padding="sm lg"
+            label="Randevu Al"
+            icon-right="keyboard_arrow_right"
+            class="full-width text-body1"
+          />
+        </div>
+      </q-img>
     </q-card>
   </div>
 </template>
