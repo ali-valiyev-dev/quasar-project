@@ -2,7 +2,7 @@ export const doctors = [
   {
     name: 'Dr. Tsataı ALI',
     specialty: 'Acil Servis',
-    img: 'src/assets/doctor_placeholder.jpg',
+    img: 'src/assets/doctors/dr_tsatai_ali.jpg',
   },
   {
     name: 'Dt. Ali Sami SİYAHOĞLU',
