@@ -74,10 +74,11 @@ const routes = [
             path: 'agiz-ve-dis-sagligi',
             component: () => import('pages/hizmet-alanlarimiz/agiz-ve-dis-sagligi/index.vue'),
           },
-          //     {
-          //       path: 'anesteziyoloji-ve-reanimasyon',
-          //       component: () => import('pages/anesteziyoloji-ve-reanimasyon/index.vue'),
-          //     },
+          {
+            path: 'anesteziyoloji-ve-reanimasyon',
+            component: () =>
+              import('pages/hizmet-alanlarimiz/anesteziyoloji-ve-reanimasyon/index.vue'),
+          },
           //     {
           //       path: 'beslenme-ve-diyetetik',
           //       component: () => import('pages/beslenme-ve-diyetetik/index.vue'),
