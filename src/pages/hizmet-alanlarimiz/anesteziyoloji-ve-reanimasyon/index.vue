@@ -4,7 +4,7 @@
       img="src/assets/services.jpg"
       :breadcrumbs="[
         { label: 'Hizmet Alanları', to: '/hizmet-alanlarimiz/tum-hizmet-alanlari' },
-        { label: 'Ağız ve Diş Sağlığı' },
+        { label: 'Anesteziyoloji ve Reanimasyon' },
       ]"
     />
     <PageContentWrapper>
