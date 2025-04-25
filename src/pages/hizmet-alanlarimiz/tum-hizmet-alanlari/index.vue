@@ -1,10 +1,10 @@
 <template>
-  <q-page padding>
+  <q-page>
     <PageHeader
       img="src/assets/services.jpg"
       :breadcrumbs="[{ label: 'Hizmet Alanları' }, { label: 'Tüm Hizmet Alanları' }]"
     />
-    <div class="q-mt-xl">
+    <div class="q-mx-auto q-py-lg q-py-sm-xl q-px-sm q-px-sm-lg q-px-md-xl">
       <q-select
         v-model="selectedBranch"
         :options="branches"

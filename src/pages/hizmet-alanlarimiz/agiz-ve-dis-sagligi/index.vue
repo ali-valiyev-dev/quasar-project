@@ -1,5 +1,5 @@
 <template>
-  <q-page padding>
+  <q-page>
     <PageHeader
       img="src/assets/services.jpg"
       :breadcrumbs="[
