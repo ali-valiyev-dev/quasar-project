@@ -1,7 +1,8 @@
 <template>
   <q-page>
+    <ImageCarousel />
     <PageContentWrapper class="wrapper">
-      <ImageCarousel />
+      <StatisticsCard class="lt-md" />
       <IntroCard />
       <MedicalServices />
       <OverviewCard />
@@ -11,9 +12,15 @@
 </template>
 
 <script setup>
-import { BlogPosts, PageContentWrapper } from 'src/components'
-import { ImageCarousel, IntroCard, MedicalServices, OverviewCard } from './components'
 import { blogs } from './data'
+import { BlogPosts, PageContentWrapper } from 'src/components'
+import {
+  StatisticsCard,
+  ImageCarousel,
+  IntroCard,
+  MedicalServices,
+  OverviewCard,
+} from './components'
 </script>
 
 <style scoped>

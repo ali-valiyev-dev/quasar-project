@@ -1,46 +1,40 @@
 <template>
-  <div>
-    <q-card flat class="row items-center q-mb-xl">
-      <q-card-section class="col-12 col-md-5">
-        <div class="relative-position">
-          <div class="blue-frame bg-primary rounded-borders"></div>
-          <div class="teal-frame bg-secondary rounded-borders"></div>
-          <q-img src="~assets/person.jpg" class="img rounded-borders" :ratio="4 / 5" fit="cover" />
-        </div>
-      </q-card-section>
+  <q-card flat class="row items-center q-mt-md-xl">
+    <q-card-section class="col-12 col-md-5">
+      <div class="relative-position">
+        <div class="blue-frame bg-primary rounded-borders"></div>
+        <div class="teal-frame bg-secondary rounded-borders"></div>
+        <q-img src="~assets/person.jpg" class="img rounded-borders" :ratio="4 / 5" fit="cover" />
+      </div>
+    </q-card-section>
 
-      <q-card-section class="col-12 col-md-7 q-pl-md-xl content-section">
-        <h2 class="text-h4 text-primary">Sağlık önce insana dokunmaktır.</h2>
+    <q-card-section class="col-12 col-md-7 q-pl-md-xl content-section">
+      <h2 class="text-h4 text-primary">Sağlık önce insana dokunmaktır.</h2>
 
-        <p class="text-h6 text-weight-light text-grey-10">
-          Özel Medicabil Hastaneleri temel kurulma amacı sektördeki boşlukları en iyi şekilde
-          doldurup, insanların hak ettiği kaliteli sağlık hizmetine çok daha rahat ulaşmalarını
-          sağlamaktır. Gelişen teknolojinin tüm imkanlarını kullanan hastanemiz, son sistem
-          cihazlarla tedavi sürecini kısaltıyor.'
-        </p>
+      <p class="text-h6 text-weight-light text-grey-10">
+        Özel Medicabil Hastaneleri temel kurulma amacı sektördeki boşlukları en iyi şekilde
+        doldurup, insanların hak ettiği kaliteli sağlık hizmetine çok daha rahat ulaşmalarını
+        sağlamaktır. Gelişen teknolojinin tüm imkanlarını kullanan hastanemiz, son sistem cihazlarla
+        tedavi sürecini kısaltıyor.'
+      </p>
 
-        <q-card-actions vertical align="left" class="q-mt-xl q-pa-none">
-          <q-btn
-            to="/"
-            unelevated
-            no-caps
-            no-wrap
-            padding="md xl"
-            label="Bizi Daha Yakından Tanıyın"
-            color="secondary"
-            class="text-body1 rounded-borders"
-          />
-        </q-card-actions>
-      </q-card-section>
-    </q-card>
-
-    <StatisticsCard />
-  </div>
+      <q-card-actions vertical align="left" class="q-mt-xl q-pa-none">
+        <q-btn
+          to="/"
+          unelevated
+          no-caps
+          no-wrap
+          padding="md xl"
+          label="Bizi Daha Yakından Tanıyın"
+          color="secondary"
+          class="text-body1 rounded-borders"
+        />
+      </q-card-actions>
+    </q-card-section>
+  </q-card>
 </template>
 
-<script setup>
-import StatisticsCard from './StatisticsCard.vue'
-</script>
+<script setup></script>
 
 <style scoped>
 .img {
