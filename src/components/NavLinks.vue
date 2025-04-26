@@ -24,7 +24,7 @@
       @mouseover="isHizmetOpen = true"
       @mouseleave="isHizmetOpen = false"
     >
-      <button class="dropdown-button" :class="{ active: isHizmetOpenActive }">
+      <button class="dropdown-button" :class="{ active: isHizmetActive }">
         Hizmet Alanlarımız
         <q-icon name="expand_more" />
       </button>
@@ -37,16 +37,28 @@
       </ul>
     </div>
 
-    <router-link
-      to="/Ünitelerimiz"
-      class="link"
-      :class="{ active: route.path === '/Ünitelerimiz' }"
+    <div
+      class="relative-position"
+      @mouseover="isUnitelerOpen = true"
+      @mouseleave="isUnitelerOpen = false"
     >
-      Ünitelerimiz
-    </router-link>
+      <button class="dropdown-button" :class="{ active: isUnitelerActive }">
+        Ünitelerimiz
+        <q-icon name="expand_more" />
+      </button>
+      <ul v-if="isUnitelerOpen" class="dropdown-menu">
+        <li v-for="(item, index) in UNITELER_LINKS" :key="index">
+          <router-link :to="item.to" class="link" :class="{ active: route.path === item.to }">
+            {{ item.label }}
+          </router-link>
+        </li>
+      </ul>
+    </div>
+
     <router-link to="/Hekimler" class="link" :class="{ active: route.path === '/Hekimler' }">
       Hekimler
     </router-link>
+
     <router-link
       to="/BlogYazıları"
       class="link"
@@ -60,7 +72,7 @@
       @mouseover="isRehberOpen = true"
       @mouseleave="isRehberOpen = false"
     >
-      <button class="dropdown-button" :class="{ active: isRehberOpenActive }">
+      <button class="dropdown-button" :class="{ active: isRehberActive }">
         Rehber
         <q-icon name="expand_more" />
       </button>
@@ -146,6 +158,31 @@ const HIZMET_LINKS = [
   { label: 'Üroloji', to: '/hizmet-alanlarimiz/uroloji' },
 ]
 
+const UNITELER_LINKS = [
+  { label: 'Tüm Üniteler', to: '/unitelerimiz/tum-uniteler' },
+  { label: 'Acil Servis', to: '/unitelerimiz/acil-servis' },
+  { label: 'Ambulans Hizmetleri', to: '/unitelerimiz/ambulans-hizmetleri' },
+  { label: 'Ameliyathaneler', to: '/unitelerimiz/ameliyathaneler' },
+  { label: 'Check Up', to: '/unitelerimiz/check-up' },
+  { label: 'Doğum Ünitesi', to: '/unitelerimiz/dogum-unitesi' },
+  { label: 'Eforlu EKG', to: '/unitelerimiz/eforlu-ekg' },
+  { label: 'El Cerrahisi Merkezi', to: '/unitelerimiz/el-cerrahisi-merkezi' },
+  { label: 'Endoskopi Ünitesi', to: '/unitelerimiz/endoskopi-unitesi' },
+  { label: 'Fonksiyonel Tıp', to: '/unitelerimiz/fonksiyonel-tip' },
+  {
+    label: 'Fizik Tedavi ve Rehabilitasyon Ünitesi',
+    to: '/unitelerimiz/fizik-tedavi-ve-rehabilitasyon-unitesi',
+  },
+  { label: 'Klinik Biyokimya Laboratuvarı', to: '/unitelerimiz/klinik-biyokimya-laboratuvari' },
+  { label: 'Merkez Laboratuvarı', to: '/unitelerimiz/merkez-laboratuvari' },
+  { label: 'Medikal Estetik', to: '/unitelerimiz/medikal-estetik' },
+  { label: 'Obezite Cerrahisi Birimi', to: '/unitelerimiz/obezite-cerrahisi-birimi' },
+  { label: 'Poliklinikler', to: '/unitelerimiz/poliklinikler' },
+  { label: 'Odyoloji Ünitesi', to: '/unitelerimiz/odyoloji-unitesi' },
+  { label: 'Uyku Laboratuvarı', to: '/unitelerimiz/uyku-laboratuvari' },
+  { label: 'Yoğun Bakım Ünitesi', to: '/unitelerimiz/yogun-bakim-unitesi' },
+]
+
 const REHBER_LINKS = [
   { label: 'Haberler', to: '/rehber/haberler' },
   { label: 'Vlog', to: '/rehber/vlog' },
@@ -158,11 +195,13 @@ const REHBER_LINKS = [
 
 const isKurumsalOpen = ref(false)
 const isHizmetOpen = ref(false)
+const isUnitelerOpen = ref(false)
 const isRehberOpen = ref(false)
 
 const isKurumsalActive = computed(() => KURUMSAL_LINKS.some((link) => route.path === link.to))
-const isHizmetOpenActive = computed(() => HIZMET_LINKS.some((link) => route.path === link.to))
-const isRehberOpenActive = computed(() => REHBER_LINKS.some((link) => route.path === link.to))
+const isHizmetActive = computed(() => HIZMET_LINKS.some((link) => route.path === link.to))
+const isUnitelerActive = computed(() => UNITELER_LINKS.some((link) => route.path === link.to))
+const isRehberActive = computed(() => REHBER_LINKS.some((link) => route.path === link.to))
 </script>
 
 <style scoped>

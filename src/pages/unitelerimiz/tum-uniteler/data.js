@@ -1,0 +1,28 @@
+export const services = [
+  { id: 1, name: 'Acil Servis', to: '/unitelerimiz/acil-servis' },
+  { id: 2, name: 'Ambulans Hizmetleri', to: '/unitelerimiz/ambulans-hizmetleri' },
+  { id: 3, name: 'Ameliyathaneler', to: '/unitelerimiz/ameliyathaneler' },
+  { id: 4, name: 'Check Up', to: '/unitelerimiz/check-up' },
+  { id: 5, name: 'Doğum Ünitesi', to: '/unitelerimiz/dogum-unitesi' },
+  { id: 6, name: 'Eforlu EKG', to: '/unitelerimiz/eforlu-ekg' },
+  { id: 7, name: 'El Cerrahisi Merkezi', to: '/unitelerimiz/el-cerrahisi-merkezi' },
+  { id: 8, name: 'Endoskopi Ünitesi', to: '/unitelerimiz/endoskopi-unitesi' },
+  { id: 9, name: 'Fonksiyonel Tıp', to: '/unitelerimiz/fonksiyonel-tip' },
+  {
+    id: 10,
+    name: 'Fizik Tedavi ve Rehabilitasyon Ünitesi',
+    to: '/unitelerimiz/fizik-tedavi-ve-rehabilitasyon-unitesi',
+  },
+  {
+    id: 11,
+    name: 'Klinik Biyokimya Laboratuvarı',
+    to: '/unitelerimiz/klinik-biyokimya-laboratuvari',
+  },
+  { id: 12, name: 'Merkez Laboratuvarı', to: '/unitelerimiz/merkez-laboratuvari' },
+  { id: 13, name: 'Medikal Estetik', to: '/unitelerimiz/medikal-estetik' },
+  { id: 14, name: 'Obezite Cerrahisi Birimi', to: '/unitelerimiz/obezite-cerrahisi-birimi' },
+  { id: 15, name: 'Poliklinikler', to: '/unitelerimiz/poliklinikler' },
+  { id: 16, name: 'Odyoloji Ünitesi', to: '/unitelerimiz/odyoloji-unitesi' },
+  { id: 17, name: 'Uyku Laboratuvarı', to: '/unitelerimiz/uyku-laboratuvari' },
+  { id: 18, name: 'Yoğun Bakım Ünitesi', to: '/unitelerimiz/yogun-bakim-unitesi' },
+]
