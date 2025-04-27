@@ -1,0 +1,106 @@
+export const branches = [
+  { id: 1, name: 'Nilüfer Hastanesi' },
+  { id: 2, name: 'Yıldırım Hastanesi' },
+]
+
+export const services = {
+  'Nilüfer Hastanesi': [
+    { id: 1, name: 'Acil Servis', to: '/hizmet-alanlari/acil-servis' },
+    { id: 2, name: 'Ağız ve Diş Sağlığı', to: '/hizmet-alanlari/agiz-ve-dis-sagligi' },
+    {
+      id: 3,
+      name: 'Anesteziyoloji ve Reanimasyon',
+      to: '/hizmet-alanlari/anesteziyoloji-ve-reanimasyon',
+    },
+    {
+      id: 4,
+      name: 'Beyin ve Sinir Cerrahisi (Nöroşirürji)',
+      to: '/hizmet-alanlari/beyin-ve-sinir-cerrahisi',
+    },
+    { id: 5, name: 'Beslenme ve Diyetetik', to: '/hizmet-alanlari/beslenme-ve-diyetetik' },
+    { id: 6, name: 'Çocuk Cerrahisi', to: '/hizmet-alanlari/cocuk-cerrahisi' },
+    {
+      id: 7,
+      name: 'Çocuk Sağlığı ve Hastalıkları',
+      to: '/hizmet-alanlari/cocuk-sagligi-ve-hastaliklari',
+    },
+    {
+      id: 8,
+      name: 'Çocuk ve Ergen Psikiyatrisi',
+      to: '/hizmet-alanlari/cocuk-ve-ergen-psikiyatrisi',
+    },
+    { id: 9, name: 'Dahiliye (İç Hastalıkları)', to: '/hizmet-alanlari/dahiliye' },
+    { id: 10, name: 'Dermatoloji (Cildiye)', to: '/hizmet-alanlari/dermatoloji' },
+    { id: 11, name: 'Enfeksiyon Hastalıkları', to: '/hizmet-alanlari/enfeksiyon-hastaliklari' },
+    {
+      id: 12,
+      name: 'Fizik Tedavi ve Rehabilitasyon',
+      to: '/hizmet-alanlari/fizik-tedavi-ve-rehabilitasyon',
+    },
+    { id: 13, name: 'Geleneksel ve Tamamlayıcı Tıp (GETAT)', to: '/hizmet-alanlari/getat' },
+    { id: 14, name: 'Genel Cerrahi', to: '/hizmet-alanlari/genel-cerrahi' },
+    { id: 15, name: 'Göğüs Hastalıkları', to: '/hizmet-alanlari/gogus-hastaliklari' },
+    { id: 16, name: 'Göğüs Cerrahisi', to: '/hizmet-alanlari/gogus-cerrahisi' },
+    { id: 17, name: 'Göz Hastalıkları', to: '/hizmet-alanlari/goz-hastaliklari' },
+    {
+      id: 18,
+      name: 'Kadın Hastalıkları ve Doğum',
+      to: '/hizmet-alanlari/kadin-hastaliklari-ve-dogum',
+    },
+    { id: 19, name: 'Kalp ve Damar Cerrahisi', to: '/hizmet-alanlari/kalp-ve-damar-cerrahisi' },
+    { id: 20, name: 'Kardiyoloji', to: '/hizmet-alanlari/kardiyoloji' },
+    { id: 21, name: 'Klinik Psikoloji', to: '/hizmet-alanlari/klinik-psikoloji' },
+    { id: 22, name: 'Kulak Burun Boğaz Hastalıkları', to: '/hizmet-alanlari/kulak-burun-bogaz' },
+    { id: 23, name: 'Nöroloji (Beyin ve Sinir Hastalıkları)', to: '/hizmet-alanlari/noroloji' },
+    {
+      id: 24,
+      name: 'Ortopedi ve Travmatoloji',
+      to: '/hizmet-alanlari/ortopedi-ve-travmatoloji',
+    },
+    { id: 25, name: 'Psikiyatri', to: '/hizmet-alanlari/psikiyatri' },
+    {
+      id: 26,
+      name: 'Plastik ve Rekonstruktif Cerrahi',
+      to: '/hizmet-alanlari/plastik-ve-rekonstruktif-cerrahi',
+    },
+    { id: 27, name: 'Radyoloji', to: '/hizmet-alanlari/radyoloji' },
+    { id: 28, name: 'Saç Ekimi Merkezi', to: '/hizmet-alanlari/sac-ekimi-merkezi' },
+    { id: 29, name: 'Tıbbi Onkoloji', to: '/hizmet-alanlari/tibbi-onkoloji' },
+    { id: 30, name: 'Üroloji', to: '/hizmet-alanlari/uroloji' },
+  ],
+  'Yıldırım Hastanesi': [
+    {
+      id: 31,
+      name: 'Anesteziyoloji ve Reanimasyon',
+      to: '/hizmet-alanlari/anesteziyoloji-ve-reanimasyon',
+    },
+    { id: 32, name: 'Beslenme ve Diyetetik', to: '/hizmet-alanlari/beslenme-ve-diyetetik' },
+    {
+      id: 33,
+      name: 'Çocuk Sağlığı ve Hastalıkları',
+      to: '/hizmet-alanlari/cocuk-sagligi-ve-hastaliklari',
+    },
+    { id: 34, name: 'Dahiliye (İç Hastalıkları)', to: '/hizmet-alanlari/dahiliye' },
+    {
+      id: 35,
+      name: 'Fizik Tedavi ve Rehabilitasyon',
+      to: '/hizmet-alanlari/fizik-tedavi-ve-rehabilitasyon',
+    },
+    { id: 36, name: 'Göğüs Hastalıkları', to: '/hizmet-alanlari/gogus-hastaliklari' },
+    {
+      id: 37,
+      name: 'Kadın Hastalıkları ve Doğum',
+      to: '/hizmet-alanlari/kadin-hastaliklari-ve-dogum',
+    },
+    { id: 38, name: 'Kulak Burun Boğaz Hastalıkları', to: '/hizmet-alanlari/kulak-burun-bogaz' },
+    { id: 39, name: 'Kardiyoloji', to: '/hizmet-alanlari/kardiyoloji' },
+    { id: 40, name: 'Nöroloji (Beyin ve Sinir Hastalıkları)', to: '/hizmet-alanlari/noroloji' },
+    {
+      id: 41,
+      name: 'Ortopedi ve Travmatoloji',
+      to: '/hizmet-alanlari/ortopedi-ve-travmatoloji',
+    },
+    { id: 42, name: 'Radyoloji', to: '/hizmet-alanlari/radyoloji' },
+    { id: 43, name: 'Üroloji', to: '/hizmet-alanlari/uroloji' },
+  ],
+}

@@ -3,7 +3,7 @@
     <PageHeader
       img="src/assets/services.jpg"
       :breadcrumbs="[
-        { label: 'Hizmet Alanları', to: '/hizmet-alanlarimiz/tum-hizmet-alanlari' },
+        { label: 'Hizmet Alanları', to: '/hizmet-alanlari/tum-hizmet-alanlari' },
         { label: 'Anesteziyoloji ve Reanimasyon' },
       ]"
     />
