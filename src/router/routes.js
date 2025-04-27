@@ -176,10 +176,10 @@ const routes = [
             path: 'tum-uniteler',
             component: () => import('pages/unitelerimiz/tum-uniteler/index.vue'),
           },
-          // {
-          //   path: 'acil-servis',
-          //   component: () => import('pages/unitelerimiz/acil-servis/index.vue'),
-          // },
+          {
+            path: 'acil-servis',
+            component: () => import('pages/unitelerimiz/acil-servis/index.vue'),
+          },
           // {
           //   path: 'ambulans-hizmetleri',
           //   component: () => import('pages/unitelerimiz/ambulans-hizmetleri/index.vue'),
