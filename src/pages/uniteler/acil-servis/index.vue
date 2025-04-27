@@ -3,7 +3,7 @@
     <PageHeader
       img="src/assets/services.jpg"
       :breadcrumbs="[
-        { label: 'Tüm Üniteler', to: '/unitelerimiz/tum-uniteler' },
+        { label: 'Tüm Üniteler', to: '/uniteler/tum-uniteler' },
         { label: 'Acil Servis' },
       ]"
     />

@@ -170,84 +170,84 @@ const routes = [
         ],
       },
       {
-        path: 'unitelerimiz',
+        path: 'uniteler',
         children: [
           {
             path: 'tum-uniteler',
-            component: () => import('pages/unitelerimiz/tum-uniteler/index.vue'),
+            component: () => import('src/pages/uniteler/tum-uniteler/index.vue'),
           },
           {
             path: 'acil-servis',
-            component: () => import('pages/unitelerimiz/acil-servis/index.vue'),
+            component: () => import('src/pages/uniteler/acil-servis/index.vue'),
           },
           // {
           //   path: 'ambulans-hizmetleri',
-          //   component: () => import('pages/unitelerimiz/ambulans-hizmetleri/index.vue'),
+          //   component: () => import('pages/uniteler/ambulans-hizmetleri/index.vue'),
           // },
           // {
           //   path: 'ameliyathaneler',
-          //   component: () => import('pages/unitelerimiz/ameliyathaneler/index.vue'),
+          //   component: () => import('pages/uniteler/ameliyathaneler/index.vue'),
           // },
           // {
           //   path: 'check-up',
-          //   component: () => import('pages/unitelerimiz/check-up/index.vue'),
+          //   component: () => import('pages/uniteler/check-up/index.vue'),
           // },
           // {
           //   path: 'dogum-unitesi',
-          //   component: () => import('pages/unitelerimiz/dogum-unitesi/index.vue'),
+          //   component: () => import('pages/uniteler/dogum-unitesi/index.vue'),
           // },
           // {
           //   path: 'eforlu-ekg',
-          //   component: () => import('pages/unitelerimiz/eforlu-ekg/index.vue'),
+          //   component: () => import('pages/uniteler/eforlu-ekg/index.vue'),
           // },
           // {
           //   path: 'el-cerrahisi-merkezi',
-          //   component: () => import('pages/unitelerimiz/el-cerrahisi-merkezi/index.vue'),
+          //   component: () => import('pages/uniteler/el-cerrahisi-merkezi/index.vue'),
           // },
           // {
           //   path: 'endoskopi-unitesi',
-          //   component: () => import('pages/unitelerimiz/endoskopi-unitesi/index.vue'),
+          //   component: () => import('pages/uniteler/endoskopi-unitesi/index.vue'),
           // },
           // {
           //   path: 'fonksiyonel-tip',
-          //   component: () => import('pages/unitelerimiz/fonksiyonel-tip/index.vue'),
+          //   component: () => import('pages/uniteler/fonksiyonel-tip/index.vue'),
           // },
           // {
           //   path: 'fizik-tedavi-ve-rehabilitasyon-unitesi',
           //   component: () =>
-          //     import('pages/unitelerimiz/fizik-tedavi-ve-rehabilitasyon-unitesi/index.vue'),
+          //     import('pages/uniteler/fizik-tedavi-ve-rehabilitasyon-unitesi/index.vue'),
           // },
           // {
           //   path: 'klinik-biyokimya-laboratuvari',
-          //   component: () => import('pages/unitelerimiz/klinik-biyokimya-laboratuvari/index.vue'),
+          //   component: () => import('pages/uniteler/klinik-biyokimya-laboratuvari/index.vue'),
           // },
           // {
           //   path: 'merkez-laboratuvari',
-          //   component: () => import('pages/unitelerimiz/merkez-laboratuvari/index.vue'),
+          //   component: () => import('pages/uniteler/merkez-laboratuvari/index.vue'),
           // },
           // {
           //   path: 'medikal-estetik',
-          //   component: () => import('pages/unitelerimiz/medikal-estetik/index.vue'),
+          //   component: () => import('pages/uniteler/medikal-estetik/index.vue'),
           // },
           // {
           //   path: 'obezite-cerrahisi-birimi',
-          //   component: () => import('pages/unitelerimiz/obezite-cerrahisi-birimi/index.vue'),
+          //   component: () => import('pages/uniteler/obezite-cerrahisi-birimi/index.vue'),
           // },
           // {
           //   path: 'poliklinikler',
-          //   component: () => import('pages/unitelerimiz/poliklinikler/index.vue'),
+          //   component: () => import('pages/uniteler/poliklinikler/index.vue'),
           // },
           // {
           //   path: 'odyoloji-unitesi',
-          //   component: () => import('pages/unitelerimiz/odyoloji-unitesi/index.vue'),
+          //   component: () => import('pages/uniteler/odyoloji-unitesi/index.vue'),
           // },
           // {
           //   path: 'uyku-laboratuvari',
-          //   component: () => import('pages/unitelerimiz/uyku-laboratuvari/index.vue'),
+          //   component: () => import('pages/uniteler/uyku-laboratuvari/index.vue'),
           // },
           // {
           //   path: 'yogun-bakim-unitesi',
-          //   component: () => import('pages/unitelerimiz/yogun-bakim-unitesi/index.vue'),
+          //   component: () => import('pages/uniteler/yogun-bakim-unitesi/index.vue'),
           // },
         ],
       },

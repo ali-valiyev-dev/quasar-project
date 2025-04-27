@@ -2,7 +2,7 @@
   <q-page>
     <PageHeader
       img="src/assets/services.jpg"
-      :breadcrumbs="[{ label: 'Ünitelerimiz' }, { label: 'Tüm Üniteler' }]"
+      :breadcrumbs="[{ label: 'Üniteler' }, { label: 'Tüm Üniteler' }]"
     />
     <div class="q-mx-auto q-py-lg q-py-sm-xl q-px-sm q-px-sm-lg q-px-md-xl">
       <q-list v-if="services.length" class="q-mt-lg">
