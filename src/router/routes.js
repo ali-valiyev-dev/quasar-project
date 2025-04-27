@@ -252,7 +252,8 @@ const routes = [
         ],
       },
       // { path: 'Hekimler', component: () => import('pages/Hekimler/index.vue') },
-      // { path: 'BlogYazıları', component: () => import('pages/BlogYazıları/index.vue') },
+      { path: 'blog-yazilari', component: () => import('pages/blog-yazilari/index.vue') },
+      { path: 'blog-yazilari/:id', component: () => import('pages/blog-yazilari/_id/index.vue') },
       // {
       //   path: 'rehber',
       //   children: [

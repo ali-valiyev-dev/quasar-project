@@ -60,9 +60,9 @@
     </router-link>
 
     <router-link
-      to="/BlogYazıları"
+      to="/blog-yazilari"
       class="link"
-      :class="{ active: route.path === '/BlogYazıları' }"
+      :class="{ active: route.path === '/blog-yazilari' }"
     >
       Blog Yazıları
     </router-link>

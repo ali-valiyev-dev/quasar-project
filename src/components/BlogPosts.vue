@@ -1,8 +1,6 @@
 <template>
-  <div class="cards row justify-center">
-    <div class="col-md" v-for="(blog, index) in blogs" :key="index">
-      <BlogPost :blog="blog" />
-    </div>
+  <div class="cards">
+    <BlogPost v-for="blog in blogs" :key="blog.id" :blog="blog" />
   </div>
 </template>
 
@@ -16,6 +14,8 @@ defineProps({
 
 <style scoped>
 .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 16px;
 }
 </style>
