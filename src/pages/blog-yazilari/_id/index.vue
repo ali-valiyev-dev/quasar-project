@@ -7,7 +7,7 @@
 
     <PageContentWrapper>
       <div class="row">
-        <div class="col-12 col-md-8 q-pr-lg">
+        <div class="col-12 col-md-8 q-pr-md-lg">
           <q-img :src="blog.img" :ratio="16 / 9" class="rounded-borders" />
           <div>
             <h1 class="text-h4">{{ blog.title }}</h1>
@@ -50,11 +50,12 @@
             </p>
           </div>
 
-          <!-- Form goes here -->
+          <h3 class="text-h5 text-primary q-mt-xl">Uzmanlarımıza Sorun</h3>
+          <ContactForm class="q-mb-xl" />
         </div>
 
         <div class="col-12 col-md-4">
-          <h3 class="text-h5 text-secondary q-mt-none">Diğer Yazılar</h3>
+          <h3 class="text-h5 text-primary q-mt-none">Diğer Yazılar</h3>
           <q-list class="column">
             <q-item
               v-for="related in relatedBlogs"
@@ -78,7 +79,7 @@
 </template>
 
 <script setup>
-import { PageContentWrapper, PageHeader } from 'src/components'
+import { ContactForm, PageContentWrapper, PageHeader } from 'src/components'
 import { useRoute } from 'vue-router'
 import { blogs } from '../data'
 

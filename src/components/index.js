@@ -12,6 +12,7 @@ import DoctorsList from './DoctorsList.vue'
 import SectionTitle from './SectionTitle.vue'
 import BlogPosts from './BlogPosts.vue'
 import BlogPost from './BlogPost.vue'
+import ContactForm from './ContactForm.vue'
 
 export {
   DropdownMenuItem,
@@ -28,4 +29,5 @@ export {
   SectionTitle,
   BlogPosts,
   BlogPost,
+  ContactForm,
 }
