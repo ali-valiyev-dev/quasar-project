@@ -26,7 +26,7 @@
       </p>
 
       <SectionTitle title="İlgili Bloglar" class="q-mt-xl" />
-      <BlogPosts :blogs="blogs" />
+      <CardsWrapper :blogs="blogs" />
 
       <SectionTitle title="Ekibimiz" class="q-mt-xl" />
       <DoctorsList :doctors="doctors" />
@@ -41,6 +41,6 @@ import {
   PageHeader,
   DoctorsList,
   SectionTitle,
-  BlogPosts,
+  CardsWrapper,
 } from 'src/components/index'
 </script>

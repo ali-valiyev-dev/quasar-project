@@ -3,7 +3,7 @@
     <PageHeader img="src/assets/bg_breadcrumbs.jpg" :breadcrumbs="[{ label: 'Blog' }]" />
 
     <PageContentWrapper>
-      <BlogPosts :blogs="paginatedBlogs" />
+      <CardsWrapper :blogs="paginatedBlogs" />
 
       <div class="row justify-center q-mt-xl">
         <q-pagination
@@ -26,7 +26,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import { PageContentWrapper, PageHeader, BlogPosts } from 'src/components/index'
+import { PageContentWrapper, PageHeader, CardsWrapper } from 'src/components/index'
 import { blogs } from './data'
 
 const blogsPerPage = 9

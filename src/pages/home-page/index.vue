@@ -6,14 +6,14 @@
       <IntroCard />
       <MedicalServices />
       <OverviewCard />
-      <BlogPosts :blogs="blogs" />
+      <CardsWrapper :blogs="blogs" />
     </PageContentWrapper>
   </q-page>
 </template>
 
 <script setup>
 import { blogs } from './data'
-import { BlogPosts, PageContentWrapper } from 'src/components'
+import { CardsWrapper, PageContentWrapper } from 'src/components'
 import {
   StatisticsCard,
   ImageCarousel,

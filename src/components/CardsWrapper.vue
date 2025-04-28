@@ -1,11 +1,11 @@
 <template>
   <div class="cards">
-    <BlogPost v-for="blog in blogs" :key="blog.id" :blog="blog" />
+    <Card v-for="blog in blogs" :key="blog.id" :blog="blog" />
   </div>
 </template>
 
 <script setup>
-import BlogPost from './BlogPost.vue'
+import Card from './Card.vue'
 
 defineProps({
   blogs: Array,
