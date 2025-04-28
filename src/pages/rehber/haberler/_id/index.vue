@@ -3,7 +3,7 @@
     <PageHeader
       img="src/assets/bg_breadcrumbs.jpg"
       :breadcrumbs="[
-        { label: 'Haberler', to: '/haberler' },
+        { label: 'Haberler', to: '/rehber/haberler' },
         { label: filteredNewsItem?.title || 'Haber' },
       ]"
     />
