@@ -185,7 +185,7 @@ const UNITELER_LINKS = [
 
 const REHBER_LINKS = [
   { label: 'Haberler', to: '/rehber/haberler' },
-  { label: 'Vlog', to: '/rehber/vlog' },
+  { label: 'Vloglar', to: '/rehber/vloglar' },
   { label: 'Labaratuvar Test Rehberi', to: '/rehber/labaratuvar-test-rehberi' },
   {
     label: 'Tahlil Sonucumu Nasıl Öğrenebilirim?',

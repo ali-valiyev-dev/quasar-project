@@ -258,8 +258,7 @@ const routes = [
         path: 'rehber',
         children: [
           { path: 'haberler', component: () => import('pages/rehber/haberler/index.vue') },
-
-          // { path: 'vlog', component: () => import('pages/vlog/index.vue') },
+          { path: 'vloglar', component: () => import('src/pages/rehber/vloglar/index.vue') },
           // {
           //   path: 'labaratuvar-test-rehberi',
           //   component: () => import('pages/labaratuvar-test-rehberi/index.vue'),
@@ -271,6 +270,7 @@ const routes = [
         ],
       },
       { path: 'haberler/:id', component: () => import('pages/rehber/haberler/_id/index.vue') },
+      { path: 'vloglar/:id', component: () => import('pages/rehber/vloglar/_id/index.vue') },
       // // { path: 'YalınSağlık', component: () => import('pages/YalınSağlık/index.vue') },
       // { path: 'Dergi', component: () => import('pages/Dergi/index.vue') },
     ],
