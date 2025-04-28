@@ -26,7 +26,7 @@
       </p>
 
       <SectionTitle title="İlgili Bloglar" class="q-mt-xl" />
-      <CardsWrapper :blogs="blogs" />
+      <CardsWrapper :items="blogs" path="blog-yazilari" />
 
       <SectionTitle title="Ekibimiz" class="q-mt-xl" />
       <DoctorsList :doctors="doctors" />

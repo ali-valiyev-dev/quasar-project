@@ -1,6 +1,6 @@
 <template>
   <div class="cards">
-    <Card v-for="item in items" :key="item.id" :item="item" path="haberler" />
+    <Card v-for="item in items" :key="item.id" :item="item" :path="path" />
   </div>
 </template>
 
@@ -9,6 +9,7 @@ import Card from './Card.vue'
 
 defineProps({
   items: Array,
+  path: String,
 })
 </script>
 

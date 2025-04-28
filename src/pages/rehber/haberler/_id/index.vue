@@ -75,7 +75,7 @@
 <script setup>
 import { PageContentWrapper, PageHeader } from 'src/components'
 import { useRoute } from 'vue-router'
-import { news } from '../../data'
+import { news } from '../data'
 
 const route = useRoute()
 const id = route.params.id

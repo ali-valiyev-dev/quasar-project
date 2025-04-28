@@ -3,7 +3,7 @@
     <PageHeader img="src/assets/bg_breadcrumbs.jpg" :breadcrumbs="[{ label: 'Blog' }]" />
 
     <PageContentWrapper>
-      <CardsWrapper :blogs="paginatedBlogs" />
+      <CardsWrapper :items="paginatedBlogs" path="blog-yazilari" />
 
       <div class="row justify-center q-mt-xl">
         <q-pagination

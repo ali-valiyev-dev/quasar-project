@@ -3,7 +3,7 @@
     <PageHeader img="src/assets/bg_breadcrumbs.jpg" :breadcrumbs="[{ label: 'Haberler' }]" />
 
     <PageContentWrapper>
-      <CardsWrapper :items="paginatedNews" />
+      <CardsWrapper :items="paginatedNews" path="haberler" />
 
       <div class="row justify-center q-mt-xl">
         <q-pagination
@@ -27,7 +27,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { PageContentWrapper, PageHeader, CardsWrapper } from 'src/components/index'
-import { news } from '../data'
+import { news } from './data'
 
 const newsPerPage = 9
 

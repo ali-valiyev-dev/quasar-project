@@ -6,7 +6,7 @@
       <IntroCard />
       <MedicalServices />
       <OverviewCard />
-      <CardsWrapper :blogs="blogs" />
+      <CardsWrapper :items="blogs" path="blog-yazilari" />
     </PageContentWrapper>
   </q-page>
 </template>
