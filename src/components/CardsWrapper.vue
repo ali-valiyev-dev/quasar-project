@@ -1,6 +1,6 @@
 <template>
   <div class="cards">
-    <Card v-for="blog in blogs" :key="blog.id" :blog="blog" />
+    <Card v-for="item in items" :key="item.id" :item="item" path="haberler" />
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 import Card from './Card.vue'
 
 defineProps({
-  blogs: Array,
+  items: Array,
 })
 </script>
 

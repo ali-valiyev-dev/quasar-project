@@ -254,21 +254,23 @@ const routes = [
       // { path: 'Hekimler', component: () => import('pages/Hekimler/index.vue') },
       { path: 'blog-yazilari', component: () => import('pages/blog-yazilari/index.vue') },
       { path: 'blog-yazilari/:id', component: () => import('pages/blog-yazilari/_id/index.vue') },
-      // {
-      //   path: 'rehber',
-      //   children: [
-      //     { path: 'haberler', component: () => import('pages/haberler/index.vue') },
-      //     { path: 'vlog', component: () => import('pages/vlog/index.vue') },
-      //     {
-      //       path: 'labaratuvar-test-rehberi',
-      //       component: () => import('pages/labaratuvar-test-rehberi/index.vue'),
-      //     },
-      //     {
-      //       path: 'tahlil-sonucumu-nasil-ogrenebilirim',
-      //       component: () => import('pages/tahlil-sonucumu-nasil-ogrenebilirim/index.vue'),
-      //     },
-      //   ],
-      // },
+      {
+        path: 'rehber',
+        children: [
+          { path: 'haberler', component: () => import('pages/rehber/haberler/index.vue') },
+
+          // { path: 'vlog', component: () => import('pages/vlog/index.vue') },
+          // {
+          //   path: 'labaratuvar-test-rehberi',
+          //   component: () => import('pages/labaratuvar-test-rehberi/index.vue'),
+          // },
+          // {
+          //   path: 'tahlil-sonucumu-nasil-ogrenebilirim',
+          //   component: () => import('pages/tahlil-sonucumu-nasil-ogrenebilirim/index.vue'),
+          // },
+        ],
+      },
+      { path: 'haberler/:id', component: () => import('pages/rehber/haberler/_id/index.vue') },
       // // { path: 'YalınSağlık', component: () => import('pages/YalınSağlık/index.vue') },
       // { path: 'Dergi', component: () => import('pages/Dergi/index.vue') },
     ],
