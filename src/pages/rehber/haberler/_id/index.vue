@@ -54,6 +54,7 @@
             <q-item
               v-for="related in relatedNews"
               :key="related.id"
+              :to="`/haberler/${related.id}`"
               clickable
               class="q-pa-none q-pr-sm rounded-borders"
             >
@@ -73,15 +74,25 @@
 </template>
 
 <script setup>
+import { ref, watch } from 'vue'
 import { PageContentWrapper, PageHeader } from 'src/components'
 import { useRoute } from 'vue-router'
 import { news } from '../data'
 
 const route = useRoute()
-const id = route.params.id
+const id = ref(route.params.id)
 
-const filteredNewsItem = news.find((b) => b.id === id)
-const relatedNews = news.filter((b) => b.id !== id).slice(0, 10)
+const filteredNewsItem = ref(news.find((b) => b.id === id.value))
+const relatedNews = ref(news.filter((b) => b.id !== id.value).slice(0, 10))
+
+watch(
+  () => route.params.id,
+  (newId) => {
+    id.value = newId
+    filteredNewsItem.value = news.find((b) => b.id === newId)
+    relatedNews.value = news.filter((b) => b.id !== newId).slice(0, 10)
+  },
+)
 </script>
 
 <style scoped>

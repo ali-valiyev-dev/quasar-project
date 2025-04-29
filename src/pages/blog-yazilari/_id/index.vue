@@ -60,6 +60,8 @@
             <q-item
               v-for="related in relatedBlogs"
               :key="related.id"
+              :to="`/blog-yazilari/${related.id}`"
+              target="_self"
               clickable
               class="q-pa-none q-pr-sm rounded-borders"
             >
@@ -79,15 +81,25 @@
 </template>
 
 <script setup>
+import { ref, watch } from 'vue'
 import { ContactForm, PageContentWrapper, PageHeader } from 'src/components'
 import { useRoute } from 'vue-router'
 import { blogs } from '../data'
 
 const route = useRoute()
-const id = route.params.id
+const id = ref(route.params.id)
 
-const blog = blogs.find((b) => b.id === id)
-const relatedBlogs = blogs.filter((b) => b.id !== id).slice(0, 10)
+const blog = ref(blogs.find((b) => b.id === id.value))
+const relatedBlogs = ref(blogs.filter((b) => b.id !== id.value).slice(0, 10))
+
+watch(
+  () => route.params.id,
+  (newId) => {
+    id.value = newId
+    blog.value = blogs.find((b) => b.id === newId)
+    relatedBlogs.value = blogs.filter((b) => b.id !== newId).slice(0, 10)
+  },
+)
 </script>
 
 <style scoped>

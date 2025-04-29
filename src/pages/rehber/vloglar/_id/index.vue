@@ -61,6 +61,7 @@
             <q-item
               v-for="related in relatedVlogs"
               :key="related.id"
+              :to="`/vloglar/${related.id}`"
               clickable
               class="q-pa-none q-pr-sm rounded-borders"
             >
@@ -80,15 +81,25 @@
 </template>
 
 <script setup>
+import { ref, watch } from 'vue'
 import { DoctorsList, PageContentWrapper, PageHeader } from 'src/components'
 import { useRoute } from 'vue-router'
 import { vlogs } from '../data'
 
 const route = useRoute()
-const id = route.params.id
+const id = ref(route.params.id)
 
-const filteredVlogsItem = vlogs.find((b) => b.id === id)
-const relatedVlogs = vlogs.filter((b) => b.id !== id).slice(0, 10)
+const filteredVlogsItem = ref(vlogs.find((b) => b.id === id.value))
+const relatedVlogs = ref(vlogs.filter((b) => b.id !== id.value).slice(0, 10))
+
+watch(
+  () => route.params.id,
+  (newId) => {
+    id.value = newId
+    filteredVlogsItem.value = vlogs.find((b) => b.id === newId)
+    relatedVlogs.value = vlogs.filter((b) => b.id !== newId).slice(0, 10)
+  },
+)
 </script>
 
 <style scoped>
