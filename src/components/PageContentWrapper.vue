@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper q-mx-auto q-py-xl q-px-sm q-px-sm-lg q-px-md-none">
+  <div class="wrapper q-mx-auto q-py-xl q-px-sm q-px-sm-lg q-px-lg-none">
     <slot />
   </div>
 </template>
