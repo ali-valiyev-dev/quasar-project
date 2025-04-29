@@ -162,7 +162,10 @@ const menuItems = ref([
       { to: '/rehber/haberler', label: 'Haberler' },
       { to: '/rehber/vlog', label: 'Vlog' },
       { to: '/rehber/labaratuvar-test-rehberi', label: 'Labaratuvar Test Rehberi' },
-      { to: '/rehber/tahlil-sonucu', label: 'Tahlil Sonucumu Nasıl Öğrenebilirim?' },
+      {
+        to: '/rehber/tahlil-sonucumu-nasil-ogrenebilirim',
+        label: 'Tahlil Sonucumu Nasıl Öğrenebilirim?',
+      },
     ],
   },
   {
