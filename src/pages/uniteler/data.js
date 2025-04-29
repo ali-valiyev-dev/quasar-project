@@ -1,21 +1,23 @@
 export const doctors = [
   {
+    id: '9999',
     name: 'Dr. Tsataı ALI',
     specialty: 'Acil Servis',
     img: 'src/assets/doctors/dr_tsatai_ali.jpg',
   },
   {
+    id: '1222',
     name: 'Dt. Ali Sami SİYAHOĞLU',
     specialty: 'Ağız ve Diş Sağlığı Uzmanı',
     img: 'src/assets/doctors/dr_ali_sami_siyahoglu.jpg',
   },
   {
+    id: '1245',
     name: 'Yrd. Doç. Dr. Mehmet Akif SÖNMEZ',
     specialty: 'Beyin ve Sinir Cerrahisi',
     img: 'src/assets/doctors/dr_mehmet_akif_sonmez.jpg',
   },
 ]
-
 export const blogs = [
   {
     id: 'dis-sikma-problemi',

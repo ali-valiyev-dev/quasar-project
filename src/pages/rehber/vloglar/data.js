@@ -8,6 +8,7 @@ export const vlogs = [
     date: '15 Mart 2024',
     doctors: [
       {
+        id: '9999',
         name: 'Dr. Tsataı ALI',
         specialty: 'Acil Servis',
         img: 'src/assets/ss/dr_tsatai_ali.jpg',
@@ -23,6 +24,7 @@ export const vlogs = [
     date: '11 Mart 2024',
     doctors: [
       {
+        id: '1222',
         name: 'Dt. Ali Sami SİYAHOĞLU',
         specialty: 'Ağız ve Diş Sağlığı Uzmanı',
         img: 'src/assets/doctors/dr_ali_sami_siyahoglu.jpg',
@@ -38,6 +40,7 @@ export const vlogs = [
     date: '1 Mart 2024',
     doctors: [
       {
+        id: '1245',
         name: 'Yrd. Doç. Dr. Mehmet Akif SÖNMEZ',
         specialty: 'Beyin ve Sinir Cerrahisi',
         img: 'src/assets/doctors/dr_mehmet_akif_sonmez.jpg',
@@ -53,6 +56,7 @@ export const vlogs = [
     date: '20 Şubat 2024',
     doctors: [
       {
+        id: '9999',
         name: 'Dr. Tsataı ALI',
         specialty: 'Acil Servis',
         img: 'src/assets/ss/dr_tsatai_ali.jpg',
@@ -68,6 +72,7 @@ export const vlogs = [
     date: '10 Şubat 2024',
     doctors: [
       {
+        id: '1222',
         name: 'Dt. Ali Sami SİYAHOĞLU',
         specialty: 'Ağız ve Diş Sağlığı Uzmanı',
         img: 'src/assets/doctors/dr_ali_sami_siyahoglu.jpg',
@@ -83,6 +88,7 @@ export const vlogs = [
     date: '5 Şubat 2024',
     doctors: [
       {
+        id: '1245',
         name: 'Yrd. Doç. Dr. Mehmet Akif SÖNMEZ',
         specialty: 'Beyin ve Sinir Cerrahisi',
         img: 'src/assets/doctors/dr_mehmet_akif_sonmez.jpg',
@@ -98,6 +104,7 @@ export const vlogs = [
     date: '1 Şubat 2024',
     doctors: [
       {
+        id: '9999',
         name: 'Dr. Tsataı ALI',
         specialty: 'Acil Servis',
         img: 'src/assets/ss/dr_tsatai_ali.jpg',
@@ -113,6 +120,7 @@ export const vlogs = [
     date: '25 Ocak 2024',
     doctors: [
       {
+        id: '1222',
         name: 'Dt. Ali Sami SİYAHOĞLU',
         specialty: 'Ağız ve Diş Sağlığı Uzmanı',
         img: 'src/assets/doctors/dr_ali_sami_siyahoglu.jpg',
@@ -128,6 +136,7 @@ export const vlogs = [
     date: '20 Ocak 2024',
     doctors: [
       {
+        id: '1245',
         name: 'Yrd. Doç. Dr. Mehmet Akif SÖNMEZ',
         specialty: 'Beyin ve Sinir Cerrahisi',
         img: 'src/assets/doctors/dr_mehmet_akif_sonmez.jpg',
@@ -143,6 +152,7 @@ export const vlogs = [
     date: '15 Ocak 2024',
     doctors: [
       {
+        id: '9999',
         name: 'Dr. Tsataı ALI',
         specialty: 'Acil Servis',
         img: 'src/assets/ss/dr_tsatai_ali.jpg',
@@ -158,6 +168,7 @@ export const vlogs = [
     date: '10 Ocak 2024',
     doctors: [
       {
+        id: '1222',
         name: 'Dt. Ali Sami SİYAHOĞLU',
         specialty: 'Ağız ve Diş Sağlığı Uzmanı',
         img: 'src/assets/doctors/dr_ali_sami_siyahoglu.jpg',
@@ -173,6 +184,7 @@ export const vlogs = [
     date: '5 Ocak 2024',
     doctors: [
       {
+        id: '1245',
         name: 'Yrd. Doç. Dr. Mehmet Akif SÖNMEZ',
         specialty: 'Beyin ve Sinir Cerrahisi',
         img: 'src/assets/doctors/dr_mehmet_akif_sonmez.jpg',
@@ -188,6 +200,7 @@ export const vlogs = [
     date: '1 Nisan 2024',
     doctors: [
       {
+        id: '9999',
         name: 'Dr. Tsataı ALI',
         specialty: 'Acil Servis',
         img: 'src/assets/ss/dr_tsatai_ali.jpg',
@@ -203,6 +216,7 @@ export const vlogs = [
     date: '25 Mart 2024',
     doctors: [
       {
+        id: '1222',
         name: 'Dt. Ali Sami SİYAHOĞLU',
         specialty: 'Ağız ve Diş Sağlığı Uzmanı',
         img: 'src/assets/doctors/dr_ali_sami_siyahoglu.jpg',
@@ -218,6 +232,7 @@ export const vlogs = [
     date: '20 Mart 2024',
     doctors: [
       {
+        id: '1245',
         name: 'Yrd. Doç. Dr. Mehmet Akif SÖNMEZ',
         specialty: 'Beyin ve Sinir Cerrahisi',
         img: 'src/assets/doctors/dr_mehmet_akif_sonmez.jpg',
@@ -233,6 +248,7 @@ export const vlogs = [
     date: '15 Mart 2024',
     doctors: [
       {
+        id: '9999',
         name: 'Dr. Tsataı ALI',
         specialty: 'Acil Servis',
         img: 'src/assets/ss/dr_tsatai_ali.jpg',
@@ -248,6 +264,7 @@ export const vlogs = [
     date: '10 Mart 2024',
     doctors: [
       {
+        id: '1222',
         name: 'Dt. Ali Sami SİYAHOĞLU',
         specialty: 'Ağız ve Diş Sağlığı Uzmanı',
         img: 'src/assets/doctors/dr_ali_sami_siyahoglu.jpg',
@@ -263,6 +280,7 @@ export const vlogs = [
     date: '5 Mart 2024',
     doctors: [
       {
+        id: '1245',
         name: 'Yrd. Doç. Dr. Mehmet Akif SÖNMEZ',
         specialty: 'Beyin ve Sinir Cerrahisi',
         img: 'src/assets/doctors/dr_mehmet_akif_sonmez.jpg',
@@ -278,6 +296,7 @@ export const vlogs = [
     date: '1 Mart 2024',
     doctors: [
       {
+        id: '9999',
         name: 'Dr. Tsataı ALI',
         specialty: 'Acil Servis',
         img: 'src/assets/ss/dr_tsatai_ali.jpg',
@@ -293,6 +312,7 @@ export const vlogs = [
     date: '25 Şubat 2024',
     doctors: [
       {
+        id: '1222',
         name: 'Dt. Ali Sami SİYAHOĞLU',
         specialty: 'Ağız ve Diş Sağlığı Uzmanı',
         img: 'src/assets/doctors/dr_ali_sami_siyahoglu.jpg',
@@ -308,6 +328,7 @@ export const vlogs = [
     date: '20 Şubat 2024',
     doctors: [
       {
+        id: '1245',
         name: 'Yrd. Doç. Dr. Mehmet Akif SÖNMEZ',
         specialty: 'Beyin ve Sinir Cerrahisi',
         img: 'src/assets/doctors/dr_mehmet_akif_sonmez.jpg',
@@ -323,6 +344,7 @@ export const vlogs = [
     date: '15 Şubat 2024',
     doctors: [
       {
+        id: '9999',
         name: 'Dr. Tsataı ALI',
         specialty: 'Acil Servis',
         img: 'src/assets/ss/dr_tsatai_ali.jpg',
