@@ -263,10 +263,10 @@ const routes = [
             path: 'labaratuvar-test-rehberi',
             component: () => import('pages/rehber/labaratuvar-test-rehberi/index.vue'),
           },
-          // {
-          //   path: 'tahlil-sonucumu-nasil-ogrenebilirim',
-          //   component: () => import('pages/tahlil-sonucumu-nasil-ogrenebilirim/index.vue'),
-          // },
+          {
+            path: 'tahlil-sonucumu-nasil-ogrenebilirim',
+            component: () => import('pages/rehber/tahlil-sonucumu-nasil-ogrenebilirim/index.vue'),
+          },
         ],
       },
       { path: 'haberler/:id', component: () => import('pages/rehber/haberler/_id/index.vue') },
