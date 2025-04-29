@@ -18,14 +18,20 @@
       <div class="col-12 col-sm-6 col-md">
         <h5>Kuruluşlarımız</h5>
         <q-list dense class="column">
-          <router-link
-            v-for="(link, index) in organizationLinks"
-            :key="index"
-            :to="link.to"
-            class="text-body1"
-          >
-            {{ link.label }}
-          </router-link>
+          <template v-for="(link, index) in organizationLinks" :key="index">
+            <router-link v-if="link.to" :to="link.to" class="text-body1">
+              {{ link.label }}
+            </router-link>
+            <a
+              v-else
+              :href="link.href"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-body1"
+            >
+              {{ link.label }}
+            </a>
+          </template>
         </q-list>
       </div>
 
@@ -140,18 +146,18 @@
 
 <script setup>
 const patientLinks = [
-  { label: 'Online İşlemler', to: '/online-islemler' },
+  { label: 'Online İşlemler', to: '/' },
   { label: 'Medicabil Hakkında', to: '/kurumsal/medicabil-hakkinda' },
   {
     label: 'Misyon & Vizyon & Kalite Politikamız',
-    to: '/kurumsal/misyon-vizyon-kalite-politikamiz',
+    to: '/kurumsal/misyon-vizyon-kalite',
   },
   { label: 'Değerlerimiz', to: '/kurumsal/degerlerimiz' },
   { label: 'Yönetim Kadromuz', to: '/kurumsal/yonetim-kadromuz' },
   { label: 'İş Başvurusu', to: '/kurumsal/is-basvurusu' },
   { label: 'Sosyal Sorumluluk', to: '/kurumsal/sosyal-sorumluluk' },
   { label: 'Kalite Verilerimiz', to: '/kurumsal/kalite-verilerimiz' },
-  { label: 'Kişisel Verilerin Korunma Kanunu', to: '/kurumsal/kisisel-verilerin-korunma-kanunu' },
+  { label: 'Kişisel Verilerin Korunma Kanunu', to: '/kurumsal/kvkk' },
   { label: 'Taahhütname', to: '/kurumsal/taahhutname' },
   { label: 'Anlaşmalı Kurumlarımız', to: '/kurumsal/anlasmali-kurumlarimiz' },
   { label: 'Özel Sağlık Sigortaları', to: '/kurumsal/ozel-saglik-sigortalari' },
@@ -163,7 +169,7 @@ const organizationLinks = [
   { label: 'Nilüfer Hastanesi', to: '/nilufer-hastanesi' },
   { label: 'Yıldırım Hastanesi', to: '/yildirim-hastanesi' },
   { label: 'Medicabil Evde Bakım Merkezi', to: '/medicabil-evde-bakim-merkezi' },
-  { label: 'Yalın Sağlık Enstitüsü', to: '/yalin-saglik-enstitusu' },
+  { label: 'Yalın Sağlık Enstitüsü', href: 'https://yalinsaglikenstitusu.com' },
 ]
 </script>
 
