@@ -271,7 +271,6 @@ const routes = [
       },
       { path: 'haberler/:id', component: () => import('pages/rehber/haberler/_id/index.vue') },
       { path: 'vloglar/:id', component: () => import('pages/rehber/vloglar/_id/index.vue') },
-      // // { path: 'YalınSağlık', component: () => import('pages/YalınSağlık/index.vue') },
       // { path: 'Dergi', component: () => import('pages/Dergi/index.vue') },
     ],
   },

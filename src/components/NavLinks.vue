@@ -85,9 +85,10 @@
       </ul>
     </div>
 
-    <router-link to="/YalınSağlık" class="link" :class="{ active: route.path === '/YalınSağlık' }">
+    <a href="https://www.yalinsaglikenstitusu.com" class="link" rel="noopener noreferrer">
       Yalın Sağlık
-    </router-link>
+    </a>
+
     <router-link to="/Dergi" class="link" :class="{ active: route.path === '/Dergi' }">
       Dergi
     </router-link>
