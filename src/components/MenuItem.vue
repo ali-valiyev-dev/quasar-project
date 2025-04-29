@@ -2,6 +2,7 @@
   <q-item
     @click="handleClick"
     :to="to"
+    :href="href"
     class="full-width"
     :class="{ 'bg-secondary': isActive, 'hover-effect': true }"
     active-class="q-item-no-link-highlighting"
@@ -30,6 +31,7 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   props: {
     to: String,
+    href: String,
     icon: String,
     label: String,
     action: Function,
