@@ -20,7 +20,7 @@
 
       <q-card-actions vertical align="left" class="q-mt-xl q-pa-none">
         <q-btn
-          to="/"
+          to="/kurumsal/medicabil-hakkinda"
           unelevated
           no-caps
           no-wrap

@@ -1,8 +1,12 @@
 export const services = [
-  { icon: 'language', title: 'Online İşlemler' },
-  { icon: 'medical_services', title: 'Acil Servis' },
-  { icon: 'vaccines', title: 'Evde Bakım Hizmeti' },
-  { icon: 'health_and_safety', title: 'Özel Sağlık Sigortaları' },
+  { icon: 'language', title: 'Online İşlemler', link: 'https://hastane.medisoftweb.com/' },
+  { icon: 'medical_services', title: 'Acil Servis', to: '/uniteler/acil-servis' },
+  { icon: 'vaccines', title: 'Evde Bakım Hizmeti', to: '/kuruluslar/medicabil-evde-bakim-merkezi' },
+  {
+    icon: 'health_and_safety',
+    title: 'Özel Sağlık Sigortaları',
+    to: '/kurumsal/ozel-saglik-sigortalari',
+  },
 ]
 
 export const stats = [

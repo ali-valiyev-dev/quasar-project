@@ -8,7 +8,8 @@
           v-for="(service, index) in services"
           :key="index"
           clickable
-          to="/"
+          :to="service.to"
+          :href="service.link"
           class="service-card column col rounded-borders q-pa-xl q-pa-md-xl text-center"
         >
           <q-icon :name="service.icon" color="secondary" size="lg" class="icon q-mx-auto q-mb-md" />

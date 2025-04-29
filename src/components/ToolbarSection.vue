@@ -4,7 +4,7 @@
     style="gap: 16px; border-bottom: 1px solid #e0e0e0"
   >
     <q-btn
-      to="/"
+      to="/iletisim"
       unelevated
       no-caps
       no-wrap
@@ -14,7 +14,7 @@
       class="col col-sm-auto rounded-borders"
     />
     <q-btn
-      to="/"
+      href="https://online.medicabil.com/tetkiklerim"
       no-caps
       unelevated
       no-wrap
@@ -24,7 +24,7 @@
       class="col col-sm-auto rounded-borders"
     />
     <q-btn
-      to="/"
+      href="https://online.medicabil.com"
       no-caps
       unelevated
       no-wrap
