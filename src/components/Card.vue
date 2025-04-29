@@ -38,3 +38,9 @@ defineProps({
   path: String,
 })
 </script>
+
+<style scoped>
+.q-img {
+  height: 250px;
+}
+</style>
