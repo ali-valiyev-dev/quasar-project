@@ -123,19 +123,23 @@
       <div
         class="row items-center justify-center justify-sm-between text-white q-py-md q-px-sm q-px-sm-lg q-px-md-xl"
       >
-        <span class="text-body2">Copyright ©2025 Özel Medicabil Hastanesi</span>
+        <span class="text-body2">Copyright ©2022 Özel Medicabil Hastanesi</span>
 
         <div class="social-icons row items-center q-pl-md">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/Medicabil" target="_blank" rel="noopener noreferrer">
             <q-icon name="fab fa-facebook" size="xs" />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/Medicabil" target="_blank" rel="noopener noreferrer">
             <q-icon name="fab fa-twitter" size="xs" />
           </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/medicabil" target="_blank" rel="noopener noreferrer">
             <q-icon name="fab fa-instagram" size="xs" />
           </a>
-          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.youtube.com/user/medicabilhastanesi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <q-icon name="fab fa-youtube" size="xs" />
           </a>
         </div>
