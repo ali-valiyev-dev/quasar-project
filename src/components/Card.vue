@@ -1,6 +1,8 @@
 <template>
   <q-card flat bordered class="column justify-between">
-    <q-img fit="cover" :src="item.img" alt="Blog post" />
+    <router-link :to="`/${path}/${item.id}`" class="full-width">
+      <q-img fit="cover" :src="item.img" alt="Blog post" />
+    </router-link>
     <q-card-section class="col-grow column justify-between">
       <h3 class="ellipsis-2-lines text-h6 text-primary q-mt-none q-mb-sm">
         {{ item.title }}
