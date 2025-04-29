@@ -259,10 +259,10 @@ const routes = [
         children: [
           { path: 'haberler', component: () => import('pages/rehber/haberler/index.vue') },
           { path: 'vloglar', component: () => import('src/pages/rehber/vloglar/index.vue') },
-          // {
-          //   path: 'labaratuvar-test-rehberi',
-          //   component: () => import('pages/labaratuvar-test-rehberi/index.vue'),
-          // },
+          {
+            path: 'labaratuvar-test-rehberi',
+            component: () => import('pages/rehber/labaratuvar-test-rehberi/index.vue'),
+          },
           // {
           //   path: 'tahlil-sonucumu-nasil-ogrenebilirim',
           //   component: () => import('pages/tahlil-sonucumu-nasil-ogrenebilirim/index.vue'),
