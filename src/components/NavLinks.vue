@@ -55,9 +55,7 @@
       </ul>
     </div>
 
-    <router-link to="/Hekimler" class="link" :class="{ active: route.path === '/Hekimler' }">
-      Hekimler
-    </router-link>
+    <a href="https://online.medicabil.com" class="link" rel="noopener noreferrer"> Hekimler </a>
 
     <router-link
       to="/blog-yazilari"
