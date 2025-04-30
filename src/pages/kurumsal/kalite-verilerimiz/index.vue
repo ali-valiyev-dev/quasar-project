@@ -97,62 +97,47 @@
 
       <div class="charts">
         <q-img
-          src="../../../assets/kalite-verileri/yogun-bakim-unitesinde-hastane-enfeksiyonu-orani-2025.jpg"
+          src="~assets/kalite-verileri/yogun-bakim-unitesinde-hastane-enfeksiyonu-orani-2025.jpg"
           loading="eager"
         />
 
+        <q-img src="~assets/kalite-verileri/tetkik-verme-suresine-uyum-2025.jpg" loading="eager" />
+
+        <q-img src="~assets/kalite-verileri/calisan-memnuniyet-orani-2025.jpg" loading="eager" />
+
+        <q-img src="~assets/kalite-verileri/ortalama-yatis-suresi-2025.jpg" loading="eager" />
+
         <q-img
-          src="../../../assets/kalite-verileri/tetkik-verme-suresine-uyum-2025.jpg"
+          src="~assets/kalite-verileri/konsultan-hekimin-acil-servise-ulasma-suresi-2025.jpg"
           loading="eager"
         />
 
-        <q-img
-          src="../../../assets/kalite-verileri/calisan-memnuniyet-orani-2025.jpg"
-          loading="eager"
-        />
+        <q-img src="~assets/kalite-verileri/hastane-enfeksiyon-orani-2025.jpg" loading="eager" />
 
         <q-img
-          src="../../../assets/kalite-verileri/ortalama-yatis-suresi-2025.jpg"
-          loading="eager"
-        />
-
-        <q-img
-          src="../../../assets/kalite-verileri/konsultan-hekimin-acil-servise-ulasma-suresi-2025.jpg"
-          loading="eager"
-        />
-
-        <q-img
-          src="../../../assets/kalite-verileri/hastane-enfeksiyon-orani-2025.jpg"
-          loading="eager"
-        />
-
-        <q-img
-          src="../../../assets/kalite-verileri/cerrahi-alan-enfeksiyon-orani-2025.jpg"
+          src="~assets/kalite-verileri/cerrahi-alan-enfeksiyon-orani-2025.jpg"
           loading="eager"
         />
 
         <h4>Yıldırım Medicabil Kalite Verileri</h4>
 
+        <q-img src="~assets/kalite-verileri/calisma-memnuniyet-orani-yh.jpg" loading="eager" />
+
+        <q-img src="~assets/kalite-verileri/hasta-memnuniyet-orani.png" loading="eager" />
+
         <q-img
-          src="../../../assets/kalite-verileri/calisma-memnuniyet-orani-yh.jpg"
+          src="~assets/kalite-verileri/konsultan-hekimin-acil-servise-ulasma-suresi.jpg"
           loading="eager"
         />
 
-        <q-img src="../../../assets/kalite-verileri/hasta-memnuniyet-orani.png" loading="eager" />
+        <q-img src="~assets/kalite-verileri/ortalama-yatis-suresi.jpg" loading="eager" />
+
+        <q-img src="~assets/kalite-verileri/hastane-enfeksiyon-orani.jpg" loading="eager" />
+
+        <q-img src="~assets/kalite-verileri/cerrahi-alan-enfeksiyon.png" loading="eager" />
 
         <q-img
-          src="../../../assets/kalite-verileri/konsultan-hekimin-acil-servise-ulasma-suresi.jpg"
-          loading="eager"
-        />
-
-        <q-img src="../../../assets/kalite-verileri/ortalama-yatis-suresi.jpg" loading="eager" />
-
-        <q-img src="../../../assets/kalite-verileri/hastane-enfeksiyon-orani.jpg" loading="eager" />
-
-        <q-img src="../../../assets/kalite-verileri/cerrahi-alan-enfeksiyon.png" loading="eager" />
-
-        <q-img
-          src="../../../assets/kalite-verileri/yogun-bakim-unitesi-enfeksiyon-orani.png"
+          src="~assets/kalite-verileri/yogun-bakim-unitesi-enfeksiyon-orani.png"
           loading="eager"
         />
       </div>

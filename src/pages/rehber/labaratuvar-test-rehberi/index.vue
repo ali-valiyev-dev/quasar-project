@@ -9,7 +9,7 @@
       <q-img
         v-for="index in 24"
         :key="index"
-        :src="`~assets/labaratuvar-test-rehberi/klk_had_01_laboratuvar_test_rehberi_images_${index}.jpg`"
+        :src="`/labaratuvar-test-rehberi/klk_had_01_laboratuvar_test_rehberi_images_${index}.jpg`"
       />
     </PageContentWrapper>
   </q-page>
