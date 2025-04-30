@@ -1,27 +1,26 @@
 <template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
-    <div>
-      <div style="font-size: 30vh">
-        404
-      </div>
-
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
+  <PageContentWrapper>
+    <div class="text-center">
+      <div style="font-size: 18vh">404!</div>
+      <div class="text-h4 text-bold q-mb-md">Bulunamadı.</div>
+      <div class="text-h6 text-weight-light">
+        Aradığınız sayfa Bulunamadı. taşınmış veya silinmiş olabilir.
       </div>
 
       <q-btn
-        class="q-mt-xl"
-        color="white"
-        text-color="blue"
-        unelevated
         to="/"
-        label="Go Home"
+        unelevated
         no-caps
+        no-wrap
+        padding="md xl"
+        label="Anasayfaya Git"
+        color="secondary"
+        class="text-body1 rounded-borders q-mt-xl"
       />
     </div>
-  </div>
+  </PageContentWrapper>
 </template>
 
 <script setup>
-//
+import { PageContentWrapper } from 'src/components/index'
 </script>

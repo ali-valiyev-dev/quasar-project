@@ -272,6 +272,10 @@ const routes = [
       { path: 'haberler/:id', component: () => import('pages/rehber/haberler/_id/index.vue') },
       { path: 'vloglar/:id', component: () => import('pages/rehber/vloglar/_id/index.vue') },
       // { path: 'Dergi', component: () => import('pages/Dergi/index.vue') },
+      {
+        path: '/:catchAll(.*)',
+        component: () => import('pages/not-found/index.vue'),
+      },
     ],
   },
 
