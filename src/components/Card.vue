@@ -41,6 +41,6 @@ defineProps({
 
 <style scoped>
 .q-img {
-  height: 250px;
+  height: 220px;
 }
 </style>
