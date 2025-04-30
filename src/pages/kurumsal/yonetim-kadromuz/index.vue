@@ -25,7 +25,7 @@
       <p>
         Organizasyon Şemasını indirmek için
         <a
-          href="src/assets/org-semasi-2024-kek-2-rev-12-yoneticiler.pdf"
+          href="/yonetim-kadromuz/org-semasi-2024-kek-2-rev-12-yoneticiler.pdf"
           target="_blank"
           class="text-primary"
           >buraya</a
@@ -35,7 +35,7 @@
       <p>
         Yıldırım Hastanemizin organizasyon şemasını indirmek için
         <a
-          href="src/assets/yh-org-semasi-2024-kek-4-yoneticiler-web-dosyasinin-kopyasi.pdf"
+          href="/yonetim-kadromuz/yh-org-semasi-2024-kek-4-yoneticiler-web-dosyasinin-kopyasi.pdf"
           target="_blank"
           class="text-primary"
           >buraya</a
