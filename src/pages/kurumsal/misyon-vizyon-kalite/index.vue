@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <PageHeader
-      img="src/assets/bg_breadcrumbs.jpg"
+      img="~assets/bg_breadcrumbs.jpg"
       :breadcrumbs="[{ label: 'Kurumsal' }, { label: 'Misyon & Vizyon & Kalite Politikamız' }]"
     />
     <PageContentWrapper>

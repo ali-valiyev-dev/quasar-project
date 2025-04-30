@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <PageHeader
-      img="src/assets/services.jpg"
+      img="~assets/services.jpg"
       :breadcrumbs="[
         { label: 'Tüm Üniteler', to: '/uniteler/tum-uniteler' },
         { label: 'Acil Servis' },

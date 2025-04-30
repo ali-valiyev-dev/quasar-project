@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <PageHeader img="src/assets/bg_breadcrumbs.jpg" :breadcrumbs="[{ label: 'Vlogs' }]" />
+    <PageHeader img="~assets/bg_breadcrumbs.jpg" :breadcrumbs="[{ label: 'Vlogs' }]" />
 
     <PageContentWrapper>
       <CardsWrapper :items="paginatedVlogs" path="vloglar" />

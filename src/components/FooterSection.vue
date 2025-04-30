@@ -103,7 +103,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="../assets/app_store.svg" alt="App Store" class="app-icon" />
+            <img src="~assets/app_store.svg" alt="App Store" class="app-icon" />
           </a>
 
           <a
@@ -111,7 +111,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="../assets/google_play.svg" alt="Google Play" class="app-icon" />
+            <img src="~assets/google_play.svg" alt="Google Play" class="app-icon" />
           </a>
         </div>
       </div>

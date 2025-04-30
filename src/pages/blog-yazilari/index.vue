@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <PageHeader img="src/assets/bg_breadcrumbs.jpg" :breadcrumbs="[{ label: 'Blog' }]" />
+    <PageHeader img="~assets/bg_breadcrumbs.jpg" :breadcrumbs="[{ label: 'Blog' }]" />
 
     <PageContentWrapper>
       <CardsWrapper :items="paginatedBlogs" path="blog-yazilari" />

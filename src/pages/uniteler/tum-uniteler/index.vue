@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <PageHeader
-      img="src/assets/services.jpg"
+      img="~assets/services.jpg"
       :breadcrumbs="[{ label: 'Üniteler' }, { label: 'Tüm Üniteler' }]"
     />
     <div class="q-mx-auto q-py-lg q-py-sm-xl q-px-sm q-px-sm-lg q-px-md-xl">

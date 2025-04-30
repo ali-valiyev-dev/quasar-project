@@ -1,6 +1,6 @@
 <template>
   <div class="bg-primary relative-position">
-    <q-img :ratio="10 / 2" :src="img" error-src="src/assets/bg_breadcrumbs.jpg" loading="eager" />
+    <q-img :ratio="10 / 2" :src="img" error-src="~assets/bg_breadcrumbs.jpg" loading="eager" />
 
     <div class="gt-xs absolute-center full-width">
       <h2 class="text-weight-medium text-white text-no-wrap q-my-md q-my-md-lg text-center">

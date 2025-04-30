@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <PageHeader
-      img="src/assets/services.jpg"
+      img="~assets/services.jpg"
       :breadcrumbs="[
         { label: 'Hizmet Alanları', to: '/hizmet-alanlari/tum-hizmet-alanlari' },
         { label: 'Ağız ve Diş Sağlığı' },

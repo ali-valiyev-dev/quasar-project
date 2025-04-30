@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <PageHeader img="src/assets/bg_breadcrumbs.jpg" :breadcrumbs="[{ label: 'Haberler' }]" />
+    <PageHeader img="~assets/bg_breadcrumbs.jpg" :breadcrumbs="[{ label: 'Haberler' }]" />
 
     <PageContentWrapper>
       <CardsWrapper :items="paginatedNews" path="haberler" />

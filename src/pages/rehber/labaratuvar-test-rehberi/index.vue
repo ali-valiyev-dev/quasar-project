@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <PageHeader
-      img="src/assets/bg_breadcrumbs.jpg"
+      img="~assets/bg_breadcrumbs.jpg"
       :breadcrumbs="[{ label: 'Medicabil Hastanesi Labaratuvar Test Rehberi' }]"
     />
 
@@ -9,7 +9,7 @@
       <q-img
         v-for="index in 24"
         :key="index"
-        :src="`src/assets/labaratuvar-test-rehberi/klk_had_01_laboratuvar_test_rehberi_images_${index}.jpg`"
+        :src="`~assets/labaratuvar-test-rehberi/klk_had_01_laboratuvar_test_rehberi_images_${index}.jpg`"
       />
     </PageContentWrapper>
   </q-page>
