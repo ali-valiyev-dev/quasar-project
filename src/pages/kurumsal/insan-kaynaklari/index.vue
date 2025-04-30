@@ -189,9 +189,7 @@
 
       <p>
         Açık pozisyonlarımıza
-        <a href="src/assets/kvkk/calisan-kvkk.pdf" target="_blank" class="text-primary">
-          buradan
-        </a>
+        <a href="/kvkk/calisan-kvkk.pdf" target="_blank" class="text-primary"> buradan </a>
         ulaşabilirsiniz
       </p>
     </PageContentWrapper>

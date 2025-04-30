@@ -12,7 +12,7 @@
         için onayınızı almak amacıyla hazırlanmıştır.
       </p>
       <a
-        href="src/assets/taahutname/FR-HYH-06%20Taahh%c3%bctname-%c3%9ccretli%20Hasta.pdf"
+        href="/taahutname/FR-HYH-06-taahhutname-ucretli-hasta.pdf"
         target="_blank"
         class="text-primary"
       >

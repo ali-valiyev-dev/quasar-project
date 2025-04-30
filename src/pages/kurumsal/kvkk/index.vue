@@ -12,80 +12,48 @@
       </p>
 
       <h4>Çalışan Adayı</h4>
-      <a href="src/assets/kvkk/calisan-kvkk.pdf" target="_blank" class="text-primary">
+      <a href="/kvkk/calisan-kvkk.pdf" target="_blank" class="text-primary">
         Çalışan Adayı KVKK Politikası
       </a>
 
       <h4>Medicabil Nilüfer</h4>
-      <a href="src/assets/kvkk/NILUFER-KVKK-politika.pdf" target="_blank" class="text-primary">
+      <a href="/kvkk/NILUFER-KVKK-politika.pdf" target="_blank" class="text-primary">
         KVKK Politikası
       </a>
-      <a
-        href="src/assets/kvkk/NILUFER-aydinlatma-metni-internet.pdf"
-        target="_blank"
-        class="text-primary"
-      >
+      <a href="/kvkk/NILUFER-aydinlatma-metni-internet.pdf" target="_blank" class="text-primary">
         Aydınlatma Metni - İnternet
       </a>
-      <a
-        href="src/assets/kvkk/NILUFER-KVKK-Aydinlatma-Onam-surec.pdf"
-        target="_blank"
-        class="text-primary"
-      >
+      <a href="/kvkk/NILUFER-KVKK-Aydinlatma-Onam-surec.pdf" target="_blank" class="text-primary">
         Aydınlatma Metni Onam Süreci
       </a>
 
-      <a
-        href="src/assets/kvkk/Nilufer-VeriSahibiBasvuruFormu.pdf"
-        target="_blank"
-        class="text-primary"
-      >
+      <a href="/kvkk/Nilufer-VeriSahibiBasvuruFormu.pdf" target="_blank" class="text-primary">
         Veri Sahibi Başvuru Formu
       </a>
 
       <h4>Medicabil Yıldırım</h4>
-      <a href="src/assets/kvkk/YILDIRIM-KVKK-politika.pdf" target="_blank" class="text-primary">
+      <a href="/kvkk/YILDIRIM-KVKK-politika.pdf" target="_blank" class="text-primary">
         KVKK Politikası
       </a>
-      <a
-        href="src/assets/kvkk/YILDIRIM-aydinlatma-metni-internet.pdf"
-        target="_blank"
-        class="text-primary"
-      >
+      <a href="/kvkk/YILDIRIM-aydinlatma-metni-internet.pdf" target="_blank" class="text-primary">
         Aydınlatma Metni - İnternet
       </a>
-      <a
-        href="src/assets/kvkk/YILDIRIM-KVKK-Aydinlatma-Onam-surec.pdf"
-        target="_blank"
-        class="text-primary"
-      >
+      <a href="/kvkk/YILDIRIM-KVKK-Aydinlatma-Onam-surec.pdf" target="_blank" class="text-primary">
         Aydınlatma Metni Onam Süreci
       </a>
 
-      <a
-        href="src/assets/kvkk/YILDIRIM-VeriSahibiBasvuruFormu.pdf"
-        target="_blank"
-        class="text-primary"
-      >
+      <a href="/kvkk/YILDIRIM-VeriSahibiBasvuruFormu.pdf" target="_blank" class="text-primary">
         Veri Sahibi Başvuru Formu
       </a>
 
       <h4>Radsomer</h4>
-      <a href="src/assets/kvkk/RADSOMER-KVKK-politika.pdf" target="_blank" class="text-primary">
+      <a href="/kvkk/RADSOMER-KVKK-politika.pdf" target="_blank" class="text-primary">
         KVKK Politikası
       </a>
-      <a
-        href="src/assets/kvkk/RADSOMER-aydinlatma-metni-internet.pdf"
-        target="_blank"
-        class="text-primary"
-      >
+      <a href="/kvkk/RADSOMER-aydinlatma-metni-internet.pdf" target="_blank" class="text-primary">
         Aydınlatma Metni - İnternet
       </a>
-      <a
-        href="src/assets/kvkk/RADSOMER_VeriSahibiBasvuruFormu.pdf"
-        target="_blank"
-        class="text-primary"
-      >
+      <a href="/kvkk/RADSOMER_VeriSahibiBasvuruFormu.pdf" target="_blank" class="text-primary">
         Aydınlatma Metni Onam Süreci
       </a>
     </PageContentWrapper>
